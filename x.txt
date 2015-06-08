@@ -1,0 +1,3261 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dropEffect="none" class="no-js">
+<head>
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+
+<title>首页 - 知乎</title>
+
+<meta name="apple-itunes-app" content="app-id=432274380" />
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="mobile-agent" content="format=html5;url=http://www.zhihu.com/">
+<meta id="znonce" name="znonce" content="7b7098ce719b4edba10ce52945066129">
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(57px).png" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(72px).png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(76px).png" sizes="76x76" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(114px).png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(120px).png" sizes="120x120" />
+<link rel="apple-touch-icon-precomposed" href="http://static.zhihu.com/static/img/ios/zhihu(152px).png" sizes="152x152" />
+
+
+<link rel="shortcut icon" href="http://static.zhihu.com/static/favicon.ico" type="image/x-icon">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://static.zhihu.com/static/search.xml" title="知乎" />
+<link rel="stylesheet" href="http://static.zhihu.com/static/ver/fc9cfdd820293ec8020142720a2df56d.z.css">
+
+
+
+<!--[if lt IE 9]>
+<script src="http://static.zhihu.com/static/components/respond/dest/respond.min.js"></script>
+<link href="http://static.zhihu.com/static/components/respond/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="/static/components/respond/cross-domain/respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+<script src="/static/components/respond/cross-domain/respond.proxy.js"></script>
+<![endif]-->
+
+<script src="http://static.zhihu.com/static/ver/8fc2686c4d610241ee5c53c04271345a.instant.min.js"></script>
+
+<meta property="wb:webmaster" content="8e9c4b702508b902" />
+
+</head>
+
+<body class="zhi">
+<div role="navigation" class="zu-top">
+<div class="zg-wrap modal-shifting" id="zh-top-inner">
+<a href="/" class="zu-top-link-logo" id="zh-top-link-logo">知乎</a>
+
+<div class="top-nav-profile">
+<a href="/people/chen-hao-12-95" class="zu-top-nav-userinfo ">
+<span class="name">戮默</span>
+<img class="avatar" src="http://pic1.zhimg.com/035a5f058_s.jpg" />
+<span id="zh-top-nav-new-pm" class="zg-noti-number zu-top-nav-pm-count"
+style="visibility:hidden" data-count="0">
+
+</span>
+</a>
+<ul class="top-nav-dropdown" id="top-nav-profile-dropdown">
+<li>
+<a href="/people/chen-hao-12-95">
+<i class="zg-icon zg-icon-dd-home"></i>我的主页
+</a>
+</li>
+
+<li>
+<a href="/inbox">
+<i class="zg-icon zg-icon-dd-pm"></i>私信
+<span id="zh-top-nav-pm-count" class="zu-top-nav-pm-count zg-noti-number"
+style="visibility:hidden" data-count="0">
+
+</span>
+</a>
+</li>
+<li>
+<a href="/settings">
+<i class="zg-icon zg-icon-dd-settings"></i>设置
+</a>
+</li>
+<li>
+<a href="/logout">
+<i class="zg-icon zg-icon-dd-logout"></i>退出
+</a>
+</li>
+</ul>
+
+</div>
+
+
+<div role="search" id="zh-top-search" class="zu-top-search">
+<form method="GET" action="/search" id="zh-top-search-form" class="zu-top-search-form form-with-magnify">
+
+<input type="text" class="zu-top-search-input" id="q" name="q" autocomplete="off" value="" placeholder="搜索话题、问题或人…" />
+<input type="hidden" name="type" value="question" />
+<label for="q" class="hide-text">知乎搜索</label>
+<button type="submit" class="magnify-button"><i class="icon icon-magnify-q"></i><span class="hide-text">搜索</span></button>
+</form>
+<button class="zu-top-add-question" id="zu-top-add-question">提问</button>
+</div>
+
+
+
+<div id="zg-top-nav" class="zu-top-nav">
+<ul class="zu-top-nav-ul zg-clear">
+
+<li class="zu-top-nav-li current" id="zh-top-home-link">
+<a class="zu-top-nav-link" href="/" id="zh-top-link-home">首页</a>
+</li>
+<li class="top-nav-topic-selector zu-top-nav-li " id="zh-top-nav-item-topic">
+<a class="zu-top-nav-link" href="/topic" id="top-nav-dd-topic">话题</a>
+
+</li>
+<li class="zu-top-nav-li ">
+<a class="zu-top-nav-link" href="/explore">发现</a>
+</li>
+
+<li class="top-nav-noti zu-top-nav-li ">
+<a class="zu-top-nav-link" href="javascript:;" id="zh-top-nav-count-wrap" role="button"><span class="mobi-arrow"></span>消息</a>
+</li>
+
+
+
+</ul>
+<div class="zu-top-nav-live zu-noti7-popup zg-r5px no-hovercard" id="zh-top-nav-live-new" role="popup" tabindex="0">
+<div class="zu-top-nav-live-inner zg-r5px">
+<div class="zu-top-live-icon">&nbsp;</div>
+<div class="zu-home-noti-inner" id="zh-top-nav-live-new-inner">
+<div class="zm-noti7-popup-tab-container clearfix" tabindex="0">
+<button class="zm-noti7-popup-tab-item message">
+<span class="icon">消息</span>
+</button>
+<button class="zm-noti7-popup-tab-item user">
+<span class="icon">用户</span>
+</button>
+<button class="zm-noti7-popup-tab-item thanks">
+<span class="icon">赞同和感谢</span>
+</button>
+</div>
+</div>
+<div class="zm-noti7-frame-border top"></div>
+<div class="zm-noti7-frame">
+<div class="zm-noti7-content">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-content" style="display:none;">
+<div class="zm-noti7-content-inner">
+<div class="zm-noti7-popup-refresh" style="display:none;">
+<img class="noti-spinner" src="/static/img/spinner2.gif" />
+</div>
+<div class="zm-noti7-content-body">
+<div class="zm-noti7-popup-loading">
+<img class="noti-spinner" src="/static/img/noti-loading.gif" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="zm-noti7-frame-border bottom"></div>
+<div class="zm-noti7-popup-footer">
+<a href="/notifications" class="zm-noti7-popup-footer-all zg-right">查看全部 &raquo;</a>
+<a href="/settings/notification" class="zm-noti7-popup-footer-set" title="通知设置" ><i class="zg-icon zg-icon-settings"></i></a>
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+<div class="zu-global-notify" id="zh-global-message" style="display:none">
+<div class="zg-wrap">
+<div class="zu-global-nitify-inner">
+<a class="zu-global-notify-close" href="javascript:;" title="关闭" name="close">x</a>
+<span class="zu-global-notify-icon"></span>
+<span class="zu-global-notify-msg"></span>
+</div>
+</div>
+</div>
+
+
+<div class="zg-wrap zu-main">
+<div class="zu-main-content">
+<div class="zu-main-content-inner">
+
+
+<div id="zu-welcome-once" class="zu-welcome-once zg-big-gray zg-clear" style="display:none;">
+<a href="javascript:;" data-tip="s$b$不再提示" class="x-m"></a>
+<h2>欢迎来到知乎！</h2>
+<p class="first-line">一个人大脑中从未分享过的疑惑、知识、经验、见解和判断力，总是另一群人非常想知道的东西。</p>
+</div>
+<div class="shameimaru-placeholder" data-class="FeedUpShameimaruV2" data-params='{}'></div>
+
+<div class="zg-section" id="zh-home-list-title">
+<i class="zg-icon zg-icon-feedlist"></i>
+最新动态<input type="hidden" id="feed-ver" value="new">
+<span class="zg-right zm-noti-cleaner-setting" style="list-style:none"><a href="/settings/filter" class="zg-link-gray-normal"><i class="zg-icon zg-icon-settings"></i>设置</a></span>
+</div>
+<div class="zu-main-feed-con" id="zh-question-list"
+data-widget="navigable" data-navigable-options="{&quot;items&quot;:&quot;&gt;.zh-general-list&gt;.feed-item&quot;}">
+
+<a href="javascript:;" class="zu-main-feed-fresh-button" id="zh-main-feed-fresh-button" style="display:none"></a>
+<div id="js-home-feed-list" class="zh-general-list clearfix" data-init="{&quot;params&quot;: {}, &quot;nodename&quot;: &quot;HomeFeedListV2&quot;}">
+
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15489435_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4457497">
+<meta itemprop="question-url-token" content="30687810">
+
+
+<meta itemprop="answer-id" content="15489435">
+<meta itemprop="answer-url-token" content="50223350">
+
+<meta itemprop="ZReactor" data-id="15489435" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 215, &quot;voteups&quot;: 215, &quot;comments&quot;: 19, &quot;source&quot;: [[&quot;member&quot;, &quot;052982d06defa3f9ad6703c92db0feff&quot;]]}" >
+<div class="avatar">
+<a title="一笑风云过"
+data-tip="p$t$yixiao-feng-yun-guo"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/yixiao-feng-yun-guo">
+<img src="http://pic4.zhimg.com/4259b5de6158493b10b0c5628d9d6267_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$yixiao-feng-yun-guo" href="http://www.zhihu.com/people/yixiao-feng-yun-guo" target="_blank" class="zg-link" title="一笑风云过">一笑风云过</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433512071000">19 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30687810">有哪些旅行的细节极大地提升了整个旅行体验？</a></h2>
+<div class="entry-body "
+data-aid="15489435"
+data-atoken="50223350"
+data-collapsed="False"
+data-created="1433505803"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="215">215</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">215</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$sizhuren" href="/people/sizhuren">寺主人</a>，<strong title="被收藏20w次/前微软交互设计师/头像本人" class="zu-question-my-bio">被收藏20w次/前微软交互设计师/头像本人</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="215">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$yan-xian" href="http://www.zhihu.com/people/yan-xian" class="zg-link" title="燕闲">燕闲</a>、</span><span class="user-block"><a data-tip="p$t$li-ran-shao-56" href="http://www.zhihu.com/people/li-ran-shao-56" class="zg-link" title="李燃烧">李燃烧</a>、</span><span class="user-block"><a data-tip="p$t$jeeptoyi" href="http://www.zhihu.com/people/jeeptoyi" class="zg-link" title="jeep toyi">jeep toyi</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4457497" data-action="/answer/content">
+
+<textarea class="content hidden">
+谢邀。&lt;br&gt;微信微博同步更新，欢迎转发，禁止转载。&lt;br&gt;————————————————————&lt;br&gt;&lt;br&gt;因为经常一个人出去，又瘦又小还又要背很多东西，也不是女汉子，所以良好的装备对我来说就特别重要。&lt;br&gt;&lt;br&gt;对于旅途狂躁症的同学，你会发现很多细节装备升级了以后旅行体验完全是不一样的！&lt;br&gt;&lt;br&gt;不仅仅是变轻松那么简单，连脾气也会变好。&lt;br&gt;&lt;br&gt;&lt;b&gt;1. 用一个有suspension（背负系统）和packing system（不知道咋翻译）的包&lt;/b&gt;&lt;br&gt;&lt;br&gt;一个有着适合自己的背负和packing的包简直太棒了！&lt;br&gt;一个有着适合自己的背负和packing的包简直太棒了！&lt;br&gt;一个有着适合自己的背负和packing的包简直太棒了！&lt;br&gt;&lt;br&gt;（重要的话说三遍）&lt;br&gt;&lt;br&gt;喜欢徒步和登山的同学一定知道什么是背负系统和packing system。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/0c68f8a0631dd8955edfe1e15cc15484_b.jpg&quot; data-rawwidth=&quot;443&quot; data-rawheight=&quot;500&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;443&quot; data-original=&quot;http://pic1.zhimg.com/0c68f8a0631dd8955edfe1e15cc15484_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;我并不是登山和徒步爱好者，对这方面的研究也不是特别深入。但因为有一段时间我需要一个人背电脑和单反出门，背普通摄影包背一会儿就背不动了，背和肩膀痛得要命。那时候简直哪儿都不想去。&lt;br&gt;&lt;br&gt;而且每次出门的时候东西太多，一会儿就不知道放在哪个口袋了，东掏西掏找不到。那么重的包拿东西还特别不方便。&lt;br&gt;&lt;br&gt;我就一直想找到个能解决这两个问题的包。&lt;br&gt;&lt;br&gt;那个时候这类设备的网上资料还不多，我当了一回伸手党，在豆瓣上问了某装备组的组长，组长特别热心的给了我好多资料，然后很耐心的回答了我的很多白痴问题。&lt;br&gt;&lt;br&gt;所以我也在这里向不了解的同学们简要普及一下吧，如果有介绍的不对的地方还请大神纠正补充。&lt;br&gt;&lt;br&gt;背负系统简而言之就是由包的肩、胸、腰带、受力调整带、腰底调整带、背负支撑机构还有调整装置和通风装置组成的一个提供良好承重以及让你的腰肩背都非常舒适的背包系统设计。&lt;br&gt;&lt;br&gt;一个好的并且适合你的背负系统，能够将重量分散到各个身体的受力点，而不是像普通的包一样，真的是“背着”。&lt;br&gt;&lt;br&gt;这样可以最大程度减轻你肩背压力，即使背着很重的东西也感觉很舒适。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/8f9fcdbd7d1d7dbbaf0b912a3af9f332_b.jpg&quot; data-rawwidth=&quot;250&quot; data-rawheight=&quot;342&quot; class=&quot;content_image&quot; width=&quot;250&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;而Packing system其实就是合理的口袋分布的设计，水放在哪里，零食放在哪里，雨伞放在哪里，相机放在哪里，不用把包卸下来就能伸手够到。&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/48d50754c3c6be453605051c0693b096_b.jpg&quot; data-rawwidth=&quot;250&quot; data-rawheight=&quot;366&quot; class=&quot;content_image&quot; width=&quot;250&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;这两项做的特别好的品牌之一是Gregory。它的背负技术家族庞大，因为内容太多我就不一一介绍了，把链接放在下面，感兴趣的同学可以自己看。&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/BioSync%E2%84%A2_ATS.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;BioSync&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/CrossFlo%E2%84%A2_DTS.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;CrossFlo&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Fusion%E2%84%A2_Flex_Suspension.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Fusion Flex&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Fluid_Mechanics.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Fluid Mechanics&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/fusion_flex_pro_suspension.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Fusion Flex Pro&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Intuition_3D.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Intuition 3D&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Response%E2%84%A2_AFS.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Response AFS&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Response%E2%84%A2_CFS.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Response CFS&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Response%E2%84%A2_LT.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Response LT&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/VersaFit_Suspension_System.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;VersaFit&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/vertflex.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;VertFlex&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/Response%E2%84%A2_A3.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;Response A3&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://gregorypacks.com/en/trail_flex.html&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;TrailFlex&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;另外还有一些比较知名的品牌如：DANA DESIGN、KARRIMOR、BERGHAUS、DEUTER等等。&lt;br&gt;&lt;br&gt;选择包的简单的挑选要点有：&lt;br&gt;&lt;ul&gt;&lt;li&gt;合适的容量大小。不要贪大，尤其是女生。&lt;/li&gt;&lt;li&gt;合适的背负系统大小。&lt;/li&gt;&lt;li&gt;背上以后要调节好各个带子，走走，跳跳，看看合不合身，包不可以乱晃，也不可以把你捆死。&lt;/li&gt;&lt;/ul&gt;&lt;br&gt;另外通风装置也很重要，会让你在炎热的夏天不至于被你的包捂出一身痱子。&lt;br&gt;&lt;br&gt;如果你也和我一样背三头一机出门，可以买这种内胆放在登山包里，因为摄影双肩包一般都没有背负系统或者背负系统不大好。&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/ccfeef30249544550ef157bb7de9e561_b.jpg&quot; data-rawwidth=&quot;806&quot; data-rawheight=&quot;616&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;806&quot; data-original=&quot;http://pic2.zhimg.com/ccfeef30249544550ef157bb7de9e561_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;背包的研究太多了，这里仅给大家简单介绍一下，要了解更多可以自行查询一些专业的设备论坛和各品牌的官网。&lt;br&gt;&lt;br&gt;也希望大神们可以指正或者补充。&lt;br&gt;&lt;br&gt;&lt;b&gt;2. 用一个坚固轻便的旅行箱&lt;/b&gt;&lt;br&gt;强裂推荐Rimowa SALSA AIR！真的是超级轻颜值又高。特别适合女生。&lt;br&gt;我之前用了一款老重的新秀丽箱子，箱子比里面的东西都重，真坑爹（当然新秀丽也有轻箱子）。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/51e960853530820da6eda0a539f4c822_b.jpg&quot; data-rawwidth=&quot;264&quot; data-rawheight=&quot;338&quot; class=&quot;content_image&quot; width=&quot;264&quot;&gt;&lt;br&gt;&lt;br&gt;需要携带摄影器材飞机托运，HPRC万用箱简直再好不过。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/4b03c0f6f657d4f8dcb9982fd23aef53_b.jpg&quot; data-rawwidth=&quot;1000&quot; data-rawheight=&quot;751&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;1000&quot; data-original=&quot;http://pic4.zhimg.com/4b03c0f6f657d4f8dcb9982fd23aef53_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;见下面视频。&lt;br&gt;&lt;br&gt;&lt;div class=&quot;video-box&quot; data-swfurl=&quot;http://player.youku.com/player.php/sid/XMzg3MjE5Njky/v.swf&quot;&gt;&lt;div class=&quot;video-box-inner&quot;&gt;              &lt;div class=&quot;video-thumb&quot;&gt;                &lt;img class=&quot;video-thumbnail&quot; src=&quot;http://g1.ykimg.com/0100641F464F98B99894C30490AB50E0A5C32D-8321-AE3D-21FC-22858C7F92AC&quot;&gt;&lt;i class=&quot;video-play-icon&quot;&gt;&lt;/i&gt;              &lt;/div&gt;              &lt;div class=&quot;video-box-body&quot;&gt;                &lt;div class=&quot;video-title&quot;&gt;如何让HPRC万用箱就像为您的相机高级订制的一样？—在线播放—优酷网，视频高清在线观看&lt;/div&gt;                &lt;div class=&quot;video-url&quot;&gt;http://v.youku.com/v_show/id_XMzg3MjE5Njky.html?from=s1.8-1-1.2&lt;/div&gt;              &lt;/div&gt;            &lt;/div&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;3. 一双超级舒服的徒步鞋&lt;/b&gt;&lt;br&gt;这么重要的东西怎么会没有人提呢？一双好的徒步鞋可以让你暴走一整天脚都不会累啊，而且散热排湿效果又好。&lt;br&gt;&lt;br&gt;很多人用运动鞋代替徒步鞋，运动鞋比较软，支持不好，走半天脚就痛了。还有人用登山靴代替徒步鞋，也是这个问题，登山靴通常外底很硬，而且很重，如果不去登山的话在普通地上长时间走还是很累的。&lt;br&gt;&lt;br&gt;选好一双徒步鞋的标准有两个，保护性和舒适性。&lt;br&gt;&lt;br&gt;徒步鞋根据不同的路况有轻量(Light Weight)，中量(Mid Weight)，和重量(Heavy Weight)之分，一般在城市里走的话轻量就行了，如果是去野外，路况复杂坑坑洼洼的地方比较多，就需要重量。&lt;br&gt;&lt;br&gt;刚才说到保护性大部分是由外底（Outsole）提供的，而舒适性则是由鞋舌和内底（Midsole）提供的。&lt;br&gt;&lt;br&gt;去找一些比较大的品牌挑一双舒适的徒步鞋是很有必要的。&lt;br&gt;&lt;br&gt;常见的一些徒步鞋品牌：&lt;br&gt;AKU，Vasque， Asolo，Columbia，Lowa，Scarpa，La sportiva，Crispi ，Zamberlan，Danner，Merrell，TNF&lt;br&gt;&lt;br&gt;另外，注意买户外鞋的时候宁可买大一码也不要买小了。因为在长时间运动后脚会变大，很多人买正常码的鞋可能到下午会有顶脚的感觉。买大一码还可以垫鞋垫，解决，买小了就惨了。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;4. 速干衣裤袜&lt;/b&gt;&lt;br&gt;有没有碰到过去潮湿多雨的地区衣服干不了的悲惨遭遇？或者大夏天出了一身汗衣服啪叽黏在身上好恶心的。迪卡侬速干T恤虽然很丑，但是29块钱你买不到吃亏买不到上当。当天洗完第二天干，简直爽爽的。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/bb09c9d23c6cf3754c98d9c7bc1454ea_b.jpg&quot; data-rawwidth=&quot;796&quot; data-rawheight=&quot;834&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;796&quot; data-original=&quot;http://pic3.zhimg.com/bb09c9d23c6cf3754c98d9c7bc1454ea_r.jpg&quot;&gt;&lt;br&gt;还有袜子也是。女生可能还好了。如果是男生，比较喜欢出汗，推荐买coolmax材料的袜子，排汗透气效果一流的。&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/fee04ad0f706c3dacf06a477c5aa9e7a_b.jpg&quot; data-rawwidth=&quot;764&quot; data-rawheight=&quot;718&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;764&quot; data-original=&quot;http://pic3.zhimg.com/fee04ad0f706c3dacf06a477c5aa9e7a_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;5. 各种收纳&lt;/b&gt;&lt;br&gt;这种收纳套装淘宝上到处都是，又便宜。&lt;br&gt;买一套感觉清爽多了，脏衣服、内衣袜子什么都能分得开。箱子空间也变大了。&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/cbb8a204c27cf7d7f288e5b0b793e05d_b.jpg&quot; data-rawwidth=&quot;832&quot; data-rawheight=&quot;816&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;832&quot; data-original=&quot;http://pic2.zhimg.com/cbb8a204c27cf7d7f288e5b0b793e05d_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;还是Rimowa的洗漱包，你再也不用担心瓶瓶罐罐托运的时候被震碎了。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/de61bd0862d309d0e400c4bdbc0a7413_b.jpg&quot; data-rawwidth=&quot;778&quot; data-rawheight=&quot;656&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;778&quot; data-original=&quot;http://pic4.zhimg.com/de61bd0862d309d0e400c4bdbc0a7413_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;还有muji的挂包也挺好的。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/02eb594ec3cc7bd962ac32d7cb84d19b_b.jpg&quot; data-rawwidth=&quot;780&quot; data-rawheight=&quot;790&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;780&quot; data-original=&quot;http://pic4.zhimg.com/02eb594ec3cc7bd962ac32d7cb84d19b_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;去潜水游泳什么的，卖相很好干湿分离包也是很有用的。会让你觉得突然没有那么狼狈了的，湿衣服归湿衣服，干衣服归干衣服。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/eba031928baf59d926b0678ce701bb9d_b.jpg&quot; data-rawwidth=&quot;776&quot; data-rawheight=&quot;818&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;776&quot; data-original=&quot;http://pic2.zhimg.com/eba031928baf59d926b0678ce701bb9d_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;对了，还有常用药物的小药盒。淘宝上也到处都是。我一般会放点抗生素、止疼药、黄连素和感冒药还有VC和VB。&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/5f95ba759582854e630d8178be38c366_b.jpg&quot; data-rawwidth=&quot;698&quot; data-rawheight=&quot;492&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;698&quot; data-original=&quot;http://pic3.zhimg.com/5f95ba759582854e630d8178be38c366_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;7. 各种便利小物&lt;/b&gt;&lt;br&gt;&lt;br&gt;行李挂牌。&lt;br&gt;传送带上秒认行李，麻麻再也不用担心我拿了别人的包。&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/003f2825c7c724124ffc459c78daf3f4_b.jpg&quot; data-rawwidth=&quot;1436&quot; data-rawheight=&quot;842&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;1436&quot; data-original=&quot;http://pic1.zhimg.com/003f2825c7c724124ffc459c78daf3f4_r.jpg&quot;&gt;&lt;br&gt;护照套。&lt;br&gt;不用在机场七手八脚拿着各种票一不小心弄丢了。&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/b0fcc64f210e35f792011b4bd96a6228_b.jpg&quot; data-rawwidth=&quot;776&quot; data-rawheight=&quot;824&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;776&quot; data-original=&quot;http://pic1.zhimg.com/b0fcc64f210e35f792011b4bd96a6228_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;肥皂纸。&lt;br&gt;抽片式的和这种卷的都挺好用的，如果你在哪个鸟不拉屎的地方需要洗个手（我不太喜欢湿纸巾，总有种擦不干净的感觉，而且擦完吃薯片之类的吃到嘴里是苦的，嘤嘤嘤）&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/22dba99e69fd93914105df2f926bb2d9_b.jpg&quot; data-rawwidth=&quot;656&quot; data-rawheight=&quot;578&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;656&quot; data-original=&quot;http://pic2.zhimg.com/22dba99e69fd93914105df2f926bb2d9_r.jpg&quot;&gt;&lt;br&gt;酒精棉片或者碘伏棉片（用来给伤口消毒）&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/9f469427ef39fd4643954019438def16_b.jpg&quot; data-rawwidth=&quot;790&quot; data-rawheight=&quot;534&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;790&quot; data-original=&quot;http://pic3.zhimg.com/9f469427ef39fd4643954019438def16_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;褪黑素和谷维素&lt;/b&gt;&lt;br&gt;认床和倒时差的人可以试一下褪黑素&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/bac310a2ac6d796d531aaee0846a1c36_b.jpg&quot; data-rawwidth=&quot;300&quot; data-rawheight=&quot;300&quot; class=&quot;content_image&quot; width=&quot;300&quot;&gt;&lt;br&gt;有很多女生经前综合症会让旅途变得非常焦躁。&lt;br&gt;吃点谷维素就好多了，可以有效（？）防止和男票吵架。&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/c348e56d9cd3d162e010519e3ae5377a_b.jpg&quot; data-rawwidth=&quot;500&quot; data-rawheight=&quot;500&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;500&quot; data-original=&quot;http://pic3.zhimg.com/c348e56d9cd3d162e010519e3ae5377a_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;如果和别人住一间屋子，或者是去青旅，耳塞当然要来一副。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/bf33f902cc756d6852845d87b9eba9fb_b.jpg&quot; data-rawwidth=&quot;840&quot; data-rawheight=&quot;718&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;840&quot; data-original=&quot;http://pic4.zhimg.com/bf33f902cc756d6852845d87b9eba9fb_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;很多人推荐的干洗喷雾我真心不推荐大家买，除非你要去哪种鸟不拉屎不能洗澡的地方呆一个星期。（现在国内为了推这个在淘宝店上的旗号都是月子洗头粉了。）&lt;br&gt;&lt;br&gt;它的原理是靠粉末吸掉你头上的油脂，目的是让你头发不那么黏腻。&lt;br&gt;&lt;br&gt;但是使用体验简直太不好，一层一层喷完以后要搓，搓得很慢，而且搓的时候有种闹心的感觉。搓完以后你的头发似乎看起来是有点不油了，但是头皮还是油的，而且自己的感觉就是“更脏了”。&lt;br&gt;&lt;br&gt;有的时候后脑勺或者哪一部分的头发看不见没搓到，就有一大片白粉留在后面，感觉就像小时候被老师一黑板擦拍了脑袋似的。&lt;br&gt;&lt;br&gt;&lt;b&gt;安全&lt;/b&gt;&lt;br&gt;睡得比较沉单人出行的同学，尤其是女同学，最好买个报警门塞。进了屋就塞在门底下。如果有人撬锁进来的话门碰到它就会报警。&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/93baf2af01f396e9acd374f2491b59c8_b.jpg&quot; data-rawwidth=&quot;824&quot; data-rawheight=&quot;532&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;824&quot; data-original=&quot;http://pic1.zhimg.com/93baf2af01f396e9acd374f2491b59c8_r.jpg&quot;&gt;&lt;p&gt;还有七合一的这个迷你保镖也是特别好。即使不旅行，放在车里或者随身带着，关键时刻真能救命！&lt;/p&gt;&lt;img src=&quot;http://pic3.zhimg.com/b1dd1504ac8d6d6a4374f7f292731dc6_b.jpg&quot; data-rawwidth=&quot;796&quot; data-rawheight=&quot;610&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;796&quot; data-original=&quot;http://pic3.zhimg.com/b1dd1504ac8d6d6a4374f7f292731dc6_r.jpg&quot;&gt;&lt;br&gt;&lt;p&gt;7项功能包括：&lt;br&gt;&lt;/p&gt;&lt;p&gt;1. 安全锤&lt;strong&gt;（紧急的情况下击碎玻璃，力气小也能用）&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;2. 安全带切割器。&lt;/p&gt;&lt;p&gt;3. 声波报警器。&lt;/p&gt;&lt;p&gt;4. 光束可调LED手电筒。&lt;/p&gt;&lt;p&gt;5. 红色紧急闪光灯。&lt;/p&gt;&lt;p&gt;6. 数字胎压监测仪。&lt;/p&gt;&lt;p&gt;7. 胎纹计&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;实用App&lt;/b&gt;&lt;br&gt;&lt;b&gt;（太累，待更）&lt;/b&gt;&lt;br&gt;&lt;br&gt;就先这样吧，想起来再更新。&lt;br&gt;&lt;br&gt;对了，不要问我是谁，我不是雷锋，&lt;br&gt;我是处女座。&lt;br&gt;&lt;br&gt;——————————————————&lt;br&gt;&lt;a href=&quot;http://zhuanlan.zhihu.com/hibetterme&quot; class=&quot;internal&quot;&gt;进化论 - 知乎专栏&lt;/a&gt;&lt;br&gt;情商、智商、职业、外貌，生活的全面提升。 多来这里，你整个人都变好了。 &lt;br&gt;【我们是】 两个女博士， 一个非主流前微软设计师，
+还有一个辞了麦肯锡的创业狗。 &lt;br&gt;【我们产】 80%干货+20%鸡精
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 20:03" target="_blank" href="/question/30687810/answer/50223350">编辑于 20:50</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img src="http://pic1.zhimg.com/0c68f8a0631dd8955edfe1e15cc15484_xld.jpg" data-rawwidth="443" data-rawheight="500" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic1.zhimg.com/0c68f8a0631dd8955edfe1e15cc15484_r.jpg">
+谢邀。微信微博同步更新，欢迎转发，禁止转载。————————————————————因为经常一个人出去，又瘦又小还又要背很多东西，也不是女汉子，所以良好的装备对我来说就特别重要。对于旅途狂躁症的同学，你会发现很多细节装备升级了以后旅行体验…
+
+<a href="/question/30687810/answer/50223350" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4457497"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>19 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15351070_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4478843">
+<meta itemprop="question-url-token" content="30741322">
+
+
+<meta itemprop="answer-id" content="15351070">
+<meta itemprop="answer-url-token" content="49878296">
+
+<meta itemprop="ZReactor" data-id="15351070" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 0, &quot;voteups&quot;: 26, &quot;comments&quot;: 5, &quot;source&quot;: [[&quot;member&quot;, &quot;2e9bb46d3a1d7c1536a50c95b8b561d5&quot;]]}" >
+<div class="avatar">
+<a title="水耀"
+data-tip="p$t$chen-yao-39-75"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/chen-yao-39-75">
+<img src="http://pic2.zhimg.com/fb74934a8e4455f5ee4fe7e769055d39_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$chen-yao-39-75" href="http://www.zhihu.com/people/chen-yao-39-75" target="_blank" class="zg-link" title="水耀">水耀</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433511312000">32 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30741322">中央遴选明确禁止在职公务员国考?</a></h2>
+<div class="entry-body "
+data-aid="15351070"
+data-atoken="49878296"
+data-collapsed="False"
+data-created="1433263837"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="26">26</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">26</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+<h3 class="zm-item-answer-author-wrap">匿名用户</h3></div>
+
+<div class="zm-item-vote-info " data-votecount="26">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$spzkxj" href="http://www.zhihu.com/people/spzkxj" class="zg-link" title="水瓶座科学家">水瓶座科学家</a>、</span><span class="user-block"><a data-tip="p$t$man-xiang-69" href="http://www.zhihu.com/people/man-xiang-69" class="zg-link" title="满翔">满翔</a>、</span><span class="user-block"><a data-tip="p$t$bei-zhan-liao" href="http://www.zhihu.com/people/bei-zhan-liao" class="zg-link" title="被占了">被占了</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4478843" data-action="/answer/content">
+
+<textarea class="content hidden">
+坦白说，基层缺人的原因是混乱的借调制度，较低的待遇，而不是年轻公务员在考国考。&lt;br&gt;因为08年左右的清理临时工政策，导致省市两级严重缺人，但又不扩编，于是以借调的方式大量从基层抽人。我会说我们处室三个正职，五个县市区抽上来的借调么？这种借调又是一借好多年，导致基层满编制却没有人干活。&lt;br&gt;在我们单位这条线，我已经看到基层8个编制却只有2个人的现象了，于是基层违规使用临时工现象依然很普遍。&lt;br&gt;&lt;br&gt;而那些基层公务员，在一心往上考的同时并没有耽误工作，至少我所见大部分都是认真完成工作之余再复习考试的。&lt;br&gt;&lt;br&gt;这个规定既断了基层公务员的上升之路，又无法解决目前的基层矛盾，真不知道上头怎么想的？&lt;br&gt;&lt;br&gt;至于说遴选的，就我所知我们单位的遴选岗位。。。呵呵。那是萝卜坑啊。&lt;br&gt;&lt;br&gt;想想还是匿了。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/30741322/answer/49878296">发布于 2015-06-03</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+坦白说，基层缺人的原因是混乱的借调制度，较低的待遇，而不是年轻公务员在考国考。因为08年左右的清理临时工政策，导致省市两级严重缺人，但又不扩编，于是以借调的方式大量从基层抽人。我会说我们处室三个正职，五个县市区抽上来的借调么？这种借调又是一…
+
+<a href="/question/30741322/answer/49878296" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4478843"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>5 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-q
+
+"
+id="feed-q4490462_59_0"
+data-type="q"
+data-feedtype="QUESTION_FOLLOW">
+
+
+
+<meta itemprop="question-id" content="4490462">
+<meta itemprop="question-url-token" content="30770284">
+
+
+<meta itemprop="ZReactor" data-id="4490462" data-meta="{&quot;source&quot;: [[&quot;member&quot;, &quot;2a485980f91b756b2abbe92b7ca7f424&quot;]], &quot;source_type&quot;: &quot;member_follow_question&quot;, &quot;answers&quot;: 39, &quot;comments&quot;: 0, &quot;follows&quot;: 743}" >
+<div class="avatar">
+<a title="天雨白"
+data-tip="p$t$tian-yu-bai"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/tian-yu-bai">
+<img src="http://pic2.zhimg.com/24df00d19_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$tian-yu-bai" href="http://www.zhihu.com/people/tian-yu-bai" target="_blank" class="zg-link" title="天雨白">天雨白</a> 
+关注该问题
+
+
+<span class="time" data-timestamp="1433511238000">33 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30770284">网易云音乐有哪些值得收藏的歌单？</a></h2>
+
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix">
+<div class="zm-meta-panel">
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4490462"><i class="z-icon-follow"></i>关注问题</a>
+<a href="#" name="toggle-comment" class="meta-item toggle-comment" >
+<i class="z-icon-comment"></i>添加评论</a>
+<span class="zg-bull">&bull;</span> <a href="/question/30770284" class="meta-item" target="_blank">39 个回答</a>
+<a href="javascript:;" name="collapse" class="meta-item collapse"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a14419369_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="3758132">
+<meta itemprop="question-url-token" content="28937890">
+
+
+<meta itemprop="answer-id" content="14419369">
+<meta itemprop="answer-url-token" content="47553878">
+
+<meta itemprop="ZReactor" data-id="14419369" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 4627, &quot;voteups&quot;: 3435, &quot;comments&quot;: 209, &quot;source&quot;: [[&quot;member&quot;, &quot;bf43e7f6496d4987147a7bfd7597f18a&quot;]]}" >
+<div class="avatar">
+<a title="淺野早苗"
+data-tip="p$t$rsxpn"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/rsxpn">
+<img src="http://pic3.zhimg.com/a1f1766cdd2c39ec5d9a3aa17dae4586_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$rsxpn" href="http://www.zhihu.com/people/rsxpn" target="_blank" class="zg-link" title="淺野早苗">淺野早苗</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433510462000">46 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/28937890">如何跟擦肩而过的女同学搭讪？</a></h2>
+<div class="entry-body "
+data-aid="14419369"
+data-atoken="47553878"
+data-collapsed="False"
+data-created="1431419354"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="3435">3435</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">3435</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$xue-fei-49-47" href="/people/xue-fei-49-47">薛飞</a>，<strong title="微信xuefei5426 泡女神教练" class="zu-question-my-bio">微信xuefei5426 泡女神教练</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="3435">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$chen-hao-21-8" href="http://www.zhihu.com/people/chen-hao-21-8" class="zg-link" title="XXi Christy">XXi Christy</a>、</span><span class="user-block"><a data-tip="p$t$zhou-wei-71" href="http://www.zhihu.com/people/zhou-wei-71" class="zg-link" title="周威">周威</a>、</span><span class="user-block"><a data-tip="p$t$NaYeon" href="http://www.zhihu.com/people/NaYeon" class="zg-link" title="娜妍">娜妍</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="3758132" data-action="/answer/content">
+
+<textarea class="content hidden">
+&lt;p&gt;原作者：薛飞&lt;/p&gt;&lt;p&gt;原地址：&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MzA3OTI1ODAxNg==&amp;amp;mid=209109492&amp;amp;idx=1&amp;amp;sn=b131405f20eed8424687184f8e94deeb#rd&quot; class=&quot; wrap external&quot; target=&quot;_blank&quot; rel=&quot;nofollow noreferrer&quot;&gt;如何和女神搭讪认识？&lt;i class=&quot;icon-external&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;免点击转载如下：&lt;br&gt;&lt;/p&gt;&lt;p&gt;不管是男人还是女人，想要跟心仪的陌生异性搭讪，需要牢记以下三个原则，只要做到了这三条，你几乎可以跟任何你遇到的异性搭讪。&lt;/p&gt;&lt;br&gt;&lt;p&gt;搭讪原则一：第一时间开口&lt;/p&gt;&lt;p&gt;在遇到心仪的异性时，几乎是在彼此眼神对视的第一时间，就开口说话。&lt;/p&gt;&lt;p&gt;比如，你上了飞机，找到你的座位之后，发现邻座坐了一位心仪的异性，想要搭讪的话，就在彼此刚坐下打照面的第一时间里打招呼：“你好！”&lt;/p&gt;&lt;br&gt;&lt;p&gt;对方一般也会礼貌性地说“你好”，后边再聊其他话题会容易得多，比如：“出差还是旅游？”&lt;/p&gt;&lt;p&gt;这样，很容易就跟对方建立了互动，如果对方是单身异性，也许一个机会就被把握住了。&lt;/p&gt;&lt;p&gt;类似这样的场景可以发生在很多地方，但都一定要第一时间开口，这会使搭讪过程顺利得多。&lt;/p&gt;&lt;p&gt;比如，电梯里进来一位心仪的异性，就在对方刚进电梯站好的一刹那，直接问：“您去几楼？”同时把手指伸出来，做出即将要按电梯楼层按钮的动作。&lt;/p&gt;&lt;br&gt;&lt;p&gt;这样很容易对方就说出了自己的楼层，然后对方很容易会说“谢谢”。你可以接着对话：“不客气！”假设对方在16层，你可以继续问：“16楼是什么机构？”&lt;/p&gt;&lt;p&gt;对方答完，你可以说：“哦，没去过，以后有机会去参观一下！”&lt;/p&gt;&lt;p&gt;如果对方对你不反感，可能就会说：“好啊，欢迎！”&lt;/p&gt;&lt;p&gt;你就可以说：“好！改天去参观参观，怎么称呼？”&lt;/p&gt;&lt;p&gt;如果想继续认识，你可以第二天上午真的去参观，顺便约对方一起吃个午饭。&lt;/p&gt;&lt;p&gt;搭讪如果不发生在第一时间，会显得很突兀。比如在飞机上坐下来半小时了，再说“你是出差还是旅游”也显得很不自然。&lt;/p&gt;&lt;p&gt;或前面说的电梯里，你并没有第一时间问对方去几楼，而是对方快到16层了，你才说：“16楼是什么机构？”对方很容易给你一句“有什么事吗？”&lt;/p&gt;&lt;br&gt;&lt;p&gt;为什么搭讪时第一时间开口说话容易成功？&lt;/p&gt;&lt;p&gt;答案是第一时间开口说话，对方潜意识里会认为你是一个开朗、热情、愿意跟人沟通的人。如果不是第一时间开口说话，而是过了一段时间再说，对方很容易认为你并不一定是个开朗的人，跟他说话可能是有某种目的，戒备心会使对方不愿意与你做更多沟通。&lt;/p&gt;&lt;p&gt;就像我们旅游时经常遇到一些西方来的游客，他们当中的一些人在遇到中国人好奇地看他们时，会伸手打招呼并说“hello”。我们不会认为他们有什么目的，而是会觉得他们就是这么热情、开放，愿意与人互动。&lt;/p&gt;&lt;br&gt;&lt;p&gt;女人可以想象一个男人在商场里遇见你，没有第一时间跟你打招呼，而是跟在你身后半小时了才绕到前面来开口搭讪，你的第一反应会是什么呢？&lt;/p&gt;&lt;p&gt;我想有人就可能会觉得遇到了坏人，即便不把他当作有不良目的的坏人，也会觉得这是一个内向、不太自信的男人。男人的魅力也就因此下降许多，搭讪成功的概率大大下降。&lt;/p&gt;&lt;p&gt;而能够经常做到第一时间与陌生人开口说话，其实是有一个前提的，就是你真的是一个内心积极、性格开朗、心扉打开的人。&lt;/p&gt;&lt;p&gt;反回来，你经常与人搭讪，也能使你更加积极、开朗、心扉打开。你可以试试，在下一次遇到一个陌生的有魅力的异性时，第一时间搭个讪。&lt;/p&gt;&lt;br&gt;&lt;p&gt;搭讪原则二：以第三方事物为共同话题&lt;/p&gt;&lt;p&gt;搭讪的时候，开口说的第一个话题最好不要聊对方本人，比如他长得如何好看了，你是如何想认识他了，这会增加对方的紧张感，降低成功率。正确的做法是在彼此所在的时间和场所快速地找出一个第三方共同话题，人、事、物都可以。&lt;/p&gt;&lt;p&gt;所谓共同话题，就是跟两人都有关，陌生的两个人说这个话题，不会觉得突兀，而是觉得很自然。一般都是彼此都可能会关注的人、事、物。&lt;/p&gt;&lt;p&gt;比如可以拿一些物品作为共同话题。&lt;/p&gt;&lt;p&gt;对方开了新款的车：这是最新款的某某车吗？&lt;/p&gt;&lt;p&gt;对方拿了新款的手机：这是最新款的某某手机吗？&lt;/p&gt;&lt;p&gt;对方的一款包或衣服：这个包很好看，是新买的吗？&lt;/p&gt;&lt;p&gt;对方拿了一本=书：听说过这本书，是某某写的吗？&lt;/p&gt;&lt;p&gt;对方佩戴的手表、配饰等都可以。&lt;/p&gt;&lt;br&gt;&lt;p&gt;以这些物品为话题，聊聊这些物品，很容易就能和陌生人展开话题，并且整个聊天过程都会很自然。前面我举的例子就是我在地铁里遇到一位美女手里拿个iPhone，我以iPhone为话题，顺利和她聊了起来。当然，我真正的目的就是想欣赏一下当时国内还没有销售的苹果手机。&lt;/p&gt;&lt;p&gt;除了物品外，只要两个人在一个共同的场所出现，就会有共同话题，这都可以用来作为聊天的主题。&lt;/p&gt;&lt;p&gt;共同出现在机场，都是赶飞机；&lt;/p&gt;&lt;p&gt;共同出现在图书馆，都是来借书的；&lt;/p&gt;&lt;p&gt;共同出现在旅游景点，都是来旅游的；&lt;/p&gt;&lt;p&gt;共同出现在加油站，都是来加油的；&lt;/p&gt;&lt;p&gt;共同出现在饭店，都是来吃饭的，等等。&lt;/p&gt;&lt;br&gt;&lt;p&gt;我跟我太太搭讪时就以都是赶车为话题展开的。我是最后一个上车的乘客，坐下后车就开了，我就问她车在站里等了多久了（以前我们老家市里去往县城的车会在车站等很久，直到人坐满才走）。其实她也不知道车在站里等了多久，这不重要，重要的是我以此为话题和她开始聊天。&lt;/p&gt;&lt;p&gt;在大街上迎面走来一个美女或帅哥，那么看看他是不是急于赶路吧，如果他并不着急，你也可以以求助为话题，你可以请他帮你试衣服。可以说是帮家人买，身材跟他差不多，不知道合适与否，想请他帮忙试一下衣服。&lt;/p&gt;&lt;p&gt;你甚至可以自己试衣服，然后请他帮忙看看效果。我曾经有一次在贵阳出差，临时产生了去玩漂流的兴趣，但没有适合漂流时穿的衣服，就到商场里去买。自己试来试去，对穿在身上什么感觉没把握，就在商场门口找了一个逛商场的美女帮我挑选，她很热情地花了半个小时帮我搭配了全身的衣服。&lt;/p&gt;&lt;p&gt;其实，搭讪代表了一个人的内心开放和积极的程度。会搭讪的人，不只是可以把握心仪的异性，还可以在自己需要的时候，随时把身边的陌生人变成资源。&lt;/p&gt;&lt;br&gt;&lt;p&gt;搭讪原则三：问最容易回答的问题&lt;/p&gt;&lt;p&gt;搭讪时，第一句话，除了说“你好”外，基本上是以问句开始的，这样才会有沟通互动。而问的第一个问题很有讲究，第一个问题尽量问最容易回答的问题，不用思考、不用太多语言，最好让对方可以只说一个字，互动才容易开始。&lt;/p&gt;&lt;p&gt;前面举的以物品为共同话题的例子，每个物品都很容易问出一个简单的问题，比如，这是某某品牌的最新款吗？这是某某写的书吗？对方的回答只需“是”或“不是”。&lt;/p&gt;&lt;p&gt;在旅游景点遇见心仪异性，想要搭讪时可以问：“也是第一次来吗？”对方的回答也只需“是”或“不是”。&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;问简单的问题时，问题本身并不重要，只是通过这个不容易引起对方的心理防御的问题，建立和对方的沟通，使双方的对话得以展开。这样慢慢聊，两人就会熟悉起来，并可以交流更多信息。&lt;/p&gt;&lt;p&gt;比如，有一次我在十字路口等出租车，旁边有个穿得很精致的美女也在等出租车。天下着雨，她没有打伞，头发已经有些湿了。我想用自己的大伞给她也遮点雨，就问她：“也等出租车吗？”她说：“是！”她只需要回答一个“是”字，同时我手里的伞已经到了她头上，并对她说“遮下雨吧”。&lt;/p&gt;&lt;p&gt;同时遵循以上三条原则的话，基本上可以和任何想要搭讪的人建立对话关系。最后，我写了一本5万字的追女孩方法，在微信上分享，帮很多哥们泡到了女神，你也可以加我微信索取。会对你有很大帮助的。&lt;img src=&quot;http://pic2.zhimg.com/f282eff1435994d1a56660556f8f5319_b.jpg&quot; data-rawheight=&quot;258&quot; data-rawwidth=&quot;258&quot; class=&quot;content_image&quot; width=&quot;258&quot;&gt;&lt;/p&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-05-12" target="_blank" href="/question/28937890/answer/47553878">编辑于 2015-05-20</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img src="http://pic2.zhimg.com/f282eff1435994d1a56660556f8f5319_xld.jpg" data-rawheight="258" data-rawwidth="258" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic2.zhimg.com/f282eff1435994d1a56660556f8f5319_r.jpg">
+原作者：薛飞原地址：<a href="http://mp.weixin.qq.com/s?__biz=MzA3OTI1ODAxNg==&amp;mid=209109492&amp;idx=1&amp;sn=b131405f20eed8424687184f8e94deeb#rd" class=" wrap external" target="_blank" rel="nofollow noreferrer">如何和女神搭讪认识？<i class="icon-external"></i></a>免点击转载如下：不管是男人还是女人，想要跟心仪的陌生异性搭讪，需要牢记以下三个原则，只要做到了这三条，你几乎可以跟任何你遇到的异性搭讪。搭讪原则一：第一时间开口在遇到心仪的异性时，几乎是在彼此眼神对…
+
+<a href="/question/28937890/answer/47553878" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3758132"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>209 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a13030089_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="407886">
+<meta itemprop="question-url-token" content="20568620">
+
+
+<meta itemprop="answer-id" content="13030089">
+<meta itemprop="answer-url-token" content="44089273">
+
+<meta itemprop="ZReactor" data-id="13030089" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 2, &quot;voteups&quot;: 15, &quot;comments&quot;: 7, &quot;source&quot;: [[&quot;member&quot;, &quot;fa6c21004883afa4623e423155befabe&quot;]]}" >
+<div class="avatar">
+<a title="可可苏玛"
+data-tip="p$t$cocosuma"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/cocosuma">
+<img src="http://pic1.zhimg.com/7876deaee9a5ffffd27b6aabf02d18bc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$cocosuma" href="http://www.zhihu.com/people/cocosuma" target="_blank" class="zg-link" title="可可苏玛">可可苏玛</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433509767000">58 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/20568620">双马尾怎么绑才显得萌？</a></h2>
+<div class="entry-body "
+data-aid="13030089"
+data-atoken="44089273"
+data-collapsed="False"
+data-created="1428380948"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="15">15</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">15</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$huang-si-mai" href="/people/huang-si-mai">Maimai</a>，<strong title="No judging." class="zu-question-my-bio">No judging.</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="15">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$zhou-miao-50-19" href="http://www.zhihu.com/people/zhou-miao-50-19" class="zg-link" title="周苗">周苗</a>、</span><span class="user-block"><a data-tip="p$t$zhou-qi-yuan-1" href="http://www.zhihu.com/people/zhou-qi-yuan-1" class="zg-link" title="周其远">周其远</a>、</span><span class="user-block"><a data-tip="p$t$mo-ming-36" href="http://www.zhihu.com/people/mo-ming-36" class="zg-link" title="莫名">莫名</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="407886" data-action="/answer/content">
+
+<textarea class="content hidden">
+其实双马尾现实里面很难绑.但是绑好了出街也没有很违和.&lt;br&gt;&lt;br&gt;主要几个问题.一个是高度，二呢就是还有在两边还是靠后，会有不同效果.三就是长度～个人觉得很长的黑色大卷发扎起来很好看。&lt;br&gt;但这些对我来说都还好.我觉得最主要的问题是发量啊发量啊发量啊（说三遍）每次acca考试季发量就会少..还有中间减脂严重..这样下来现在发量就只有以前一半了..发量不够扎起来两边很单薄也不好看的.&lt;br&gt;所以后来解决发量问题有三种方法.&lt;br&gt;1.可以借助绑马尾的假发（不过真的好重...）效果还可以.就像下面。但是最后头发本身和假发的长度颜色都一样。才会自然.&lt;br&gt;&lt;img data-rawheight=&quot;699&quot; data-rawwidth=&quot;540&quot; src=&quot;http://pic2.zhimg.com/fe45eb40bfb9418f5a3f1faf24cabaa5_b.jpg&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;540&quot; data-original=&quot;http://pic2.zhimg.com/fe45eb40bfb9418f5a3f1faf24cabaa5_r.jpg&quot;&gt;&lt;br&gt;2.变种双马尾&lt;br&gt;如果不想借助假发呢可以采用另外一种绑法～就是取头部靠后的两缕（缕！）松松地绑在两边或者靠后一点都可以.效果就像下面这样.&lt;img data-rawheight=&quot;744&quot; data-rawwidth=&quot;546&quot; src=&quot;http://pic1.zhimg.com/5a684372022a146f9edc9a3d4eca19b4_b.jpg&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;546&quot; data-original=&quot;http://pic1.zhimg.com/5a684372022a146f9edc9a3d4eca19b4_r.jpg&quot;&gt;3.卷发&lt;br&gt;卷发能让发量看起来多一些～觉得大波浪的黑色及腰长头发绑马尾很好看。这个没有效果图但是很好脑补的吧.
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-04-07" target="_blank" href="/question/20568620/answer/44089273">编辑于 2015-04-07</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img data-rawheight="699" data-rawwidth="540" src="http://pic2.zhimg.com/fe45eb40bfb9418f5a3f1faf24cabaa5_xld.jpg" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic2.zhimg.com/fe45eb40bfb9418f5a3f1faf24cabaa5_r.jpg">
+其实双马尾现实里面很难绑.但是绑好了出街也没有很违和.主要几个问题.一个是高度，二呢就是还有在两边还是靠后，会有不同效果.三就是长度～个人觉得很长的黑色大卷发扎起来很好看。但这些对我来说都还好.我觉得最主要的问题是发量啊发量啊发量啊（说三遍）…
+
+<a href="/question/20568620/answer/44089273" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-407886"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>7 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15491253_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4574966">
+<meta itemprop="question-url-token" content="30981064">
+
+
+<meta itemprop="answer-id" content="15491253">
+<meta itemprop="answer-url-token" content="50227964">
+
+<meta itemprop="ZReactor" data-id="15491253" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 0, &quot;voteups&quot;: 19, &quot;comments&quot;: 12, &quot;source&quot;: [[&quot;member&quot;, &quot;fa6c21004883afa4623e423155befabe&quot;]]}" >
+<div class="avatar">
+<a title="可可苏玛"
+data-tip="p$t$cocosuma"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/cocosuma">
+<img src="http://pic1.zhimg.com/7876deaee9a5ffffd27b6aabf02d18bc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$cocosuma" href="http://www.zhihu.com/people/cocosuma" target="_blank" class="zg-link" title="可可苏玛">可可苏玛</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433509763000">58 分钟前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30981064">拥有一辆跑车是什么感觉？</a></h2>
+<div class="entry-body "
+data-aid="15491253"
+data-atoken="50227964"
+data-collapsed="False"
+data-created="1433508581"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="19">19</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">19</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$yunshu" href="/people/yunshu">云舒</a>，<strong title="阿里巴巴集团 资深安全专家，http://www.icylife.net" class="zu-question-my-bio">阿里巴巴集团 资深安全专家，…</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="19">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$li-gou-dan-38-85" href="http://www.zhihu.com/people/li-gou-dan-38-85" class="zg-link" title="唐狗蛋">唐狗蛋</a>、</span><span class="user-block"><a data-tip="p$t$liu-tony-44" href="http://www.zhihu.com/people/liu-tony-44" class="zg-link" title="白夜星">白夜星</a>、</span><span class="user-block"><a data-tip="p$t$bboczeng" href="http://www.zhihu.com/people/bboczeng" class="zg-link" title="曾博">曾博</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4574966" data-action="/answer/content">
+
+<textarea class="content hidden">
+堵车，开不动。&lt;br&gt;&lt;br&gt;油门和方向都很重，很颠簸。杭州的路也不好，开起来特别累，屁股和腿都很痛。&lt;br&gt;&lt;br&gt;声音大，不太好意思加速，反而很肉。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/30981064/answer/50227964">发布于 20:49</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+堵车，开不动。油门和方向都很重，很颠簸。杭州的路也不好，开起来特别累，屁股和腿都很痛。声音大，不太好意思加速，反而很肉。
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4574966"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>12 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15489639_101_0"
+data-type="a"
+data-feedtype="ANSWER_CREATE">
+
+
+
+<meta itemprop="question-id" content="4578129">
+<meta itemprop="question-url-token" content="30988941">
+
+
+<meta itemprop="answer-id" content="15489639">
+<meta itemprop="answer-url-token" content="50223882">
+
+<meta itemprop="ZReactor" data-id="15489639" data-meta="{&quot;source_type&quot;: &quot;member_answer_question&quot;, &quot;favourites&quot;: 0, &quot;voteups&quot;: 6, &quot;comments&quot;: 5, &quot;source&quot;: [[&quot;member&quot;, &quot;2b81947c2821e9d2f47907a51b15e6f8&quot;]]}" >
+<div class="avatar">
+<a title="恶魔的奶爸Sam"
+data-tip="p$t$e-mo-de-nai-ba"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/e-mo-de-nai-ba">
+<img src="http://pic4.zhimg.com/a43ac5c67c4927db3676c919ba61d903_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$e-mo-de-nai-ba" href="http://www.zhihu.com/people/e-mo-de-nai-ba" target="_blank" class="zg-link" title="恶魔的奶爸Sam">恶魔的奶爸Sam</a> 
+回答了该问题
+
+
+<span class="time" data-timestamp="1433506155000">1 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30988941">康夏卖书的真相是怎样的？</a></h2>
+<div class="entry-body "
+data-aid="15489639"
+data-atoken="50223882"
+data-collapsed="False"
+data-created="1433506152"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="6">6</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">6</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-vote-info " data-votecount="6">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$he-er-meng-92" href="http://www.zhihu.com/people/he-er-meng-92" class="zg-link" title="何尔萌">何尔萌</a>、</span><span class="user-block"><a data-tip="p$t$ye-mo-20" href="http://www.zhihu.com/people/ye-mo-20" class="zg-link" title="也魔">也魔</a>、</span><span class="user-block"><a data-tip="p$t$lao-you-ji-de-liang-fen" href="http://www.zhihu.com/people/lao-you-ji-de-liang-fen" class="zg-link" title="老友记的凉粉">老友记的凉粉</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4578129" data-action="/answer/content">
+
+<textarea class="content hidden">
+现在应该没人收到退款吧——这本身足够说明问题了&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/4dfa248f2ae2e37c4e7bfbbecaa9055e_b.jpg&quot; data-rawwidth=&quot;604&quot; data-rawheight=&quot;506&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;604&quot; data-original=&quot;http://pic3.zhimg.com/4dfa248f2ae2e37c4e7bfbbecaa9055e_r.jpg&quot;&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/30988941/answer/50223882">发布于 20:09</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img src="http://pic3.zhimg.com/4dfa248f2ae2e37c4e7bfbbecaa9055e_xld.jpg" data-rawwidth="604" data-rawheight="506" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic3.zhimg.com/4dfa248f2ae2e37c4e7bfbbecaa9055e_r.jpg">
+现在应该没人收到退款吧——这本身足够说明问题了
+
+<a href="/question/30988941/answer/50223882" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4578129"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>5 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15483583_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4578548">
+<meta itemprop="question-url-token" content="30990006">
+
+
+<meta itemprop="answer-id" content="15483583">
+<meta itemprop="answer-url-token" content="50208851">
+
+<meta itemprop="ZReactor" data-id="15483583" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 3, &quot;voteups&quot;: 19, &quot;comments&quot;: 7, &quot;source&quot;: [[&quot;member&quot;, &quot;2b81947c2821e9d2f47907a51b15e6f8&quot;]]}" >
+<div class="avatar">
+<a title="恶魔的奶爸Sam"
+data-tip="p$t$e-mo-de-nai-ba"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/e-mo-de-nai-ba">
+<img src="http://pic4.zhimg.com/a43ac5c67c4927db3676c919ba61d903_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$e-mo-de-nai-ba" href="http://www.zhihu.com/people/e-mo-de-nai-ba" target="_blank" class="zg-link" title="恶魔的奶爸Sam">恶魔的奶爸Sam</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433505282000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30990006">怎么样让别人觉得这家店是“太贵没人来”而不是“太差没人来”？</a></h2>
+<div class="entry-body "
+data-aid="15483583"
+data-atoken="50208851"
+data-collapsed="False"
+data-created="1433496987"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="19">19</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">19</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$edison-chen-92" href="/people/edison-chen-92">Edison Chen</a>，<strong title="从小爱体育。" class="zu-question-my-bio">从小爱体育。</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="19">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$ge-ge-da-77" href="http://www.zhihu.com/people/ge-ge-da-77" class="zg-link" title="若启公子">若启公子</a>、</span><span class="user-block"><a data-tip="p$t$liu-yong-zhi" href="http://www.zhihu.com/people/liu-yong-zhi" class="zg-link" title="刘永志">刘永志</a>、</span><span class="user-block"><a data-tip="p$t$sl-yang" href="http://www.zhihu.com/people/sl-yang" class="zg-link" title="sl yang">sl yang</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4578548" data-action="/answer/content">
+
+<textarea class="content hidden">
+大门紧闭，门口站个穿西装的保镖。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/30990006/answer/50208851">发布于 17:36</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+大门紧闭，门口站个穿西装的保镖。
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4578548"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>7 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-q
+
+"
+id="feed-q487268_59_0"
+data-type="q"
+data-feedtype="QUESTION_FOLLOW">
+
+
+
+<meta itemprop="question-id" content="487268">
+<meta itemprop="question-url-token" content="20767176">
+
+
+<meta itemprop="ZReactor" data-id="487268" data-meta="{&quot;source&quot;: [[&quot;member&quot;, &quot;bf43e7f6496d4987147a7bfd7597f18a&quot;]], &quot;source_type&quot;: &quot;member_follow_question&quot;, &quot;answers&quot;: 537, &quot;comments&quot;: 5, &quot;follows&quot;: 4483}" >
+<div class="avatar">
+<a title="淺野早苗"
+data-tip="p$t$rsxpn"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/rsxpn">
+<img src="http://pic3.zhimg.com/a1f1766cdd2c39ec5d9a3aa17dae4586_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$rsxpn" href="http://www.zhihu.com/people/rsxpn" target="_blank" class="zg-link" title="淺野早苗">淺野早苗</a> 
+关注该问题
+
+
+<span class="time" data-timestamp="1433504909000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/20767176">你最尴尬的一次经历是怎样的？</a></h2>
+
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix">
+<div class="zm-meta-panel">
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-487268"><i class="z-icon-follow"></i>关注问题</a>
+<a href="#" name="toggle-comment" class="meta-item toggle-comment" >
+<i class="z-icon-comment"></i>5 条评论</a>
+<span class="zg-bull">&bull;</span> <a href="/question/20767176" class="meta-item" target="_blank">537 个回答</a>
+<a href="javascript:;" name="collapse" class="meta-item collapse"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a8853685_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="487268">
+<meta itemprop="question-url-token" content="20767176">
+
+
+<meta itemprop="answer-id" content="8853685">
+<meta itemprop="answer-url-token" content="33666419">
+
+<meta itemprop="ZReactor" data-id="8853685" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 382, &quot;voteups&quot;: 2415, &quot;comments&quot;: 114, &quot;source&quot;: [[&quot;member&quot;, &quot;bf43e7f6496d4987147a7bfd7597f18a&quot;], [&quot;member&quot;, &quot;052982d06defa3f9ad6703c92db0feff&quot;]]}" >
+<div class="avatar">
+<a title="淺野早苗"
+data-tip="p$t$rsxpn"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/rsxpn">
+<img src="http://pic3.zhimg.com/a1f1766cdd2c39ec5d9a3aa17dae4586_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$rsxpn" href="http://www.zhihu.com/people/rsxpn" target="_blank" class="zg-link" title="淺野早苗">淺野早苗</a>、<a data-tip="p$t$yixiao-feng-yun-guo" href="http://www.zhihu.com/people/yixiao-feng-yun-guo" target="_blank" class="zg-link" title="一笑风云过">一笑风云过</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433504899000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/20767176">你最尴尬的一次经历是怎样的？</a></h2>
+<div class="entry-body "
+data-aid="8853685"
+data-atoken="33666419"
+data-collapsed="False"
+data-created="1416394452"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2415">2415</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">2415</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$li-ao-wen" href="/people/li-ao-wen">李傲文</a>，<strong title="唯刀百辟，唯心不易" class="zu-question-my-bio">唯刀百辟，唯心不易</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="2415">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$qiangua95" href="http://www.zhihu.com/people/qiangua95" class="zg-link" title="Bacilion">Bacilion</a>、</span><span class="user-block"><a data-tip="p$t$xiao-pei-pei" href="http://www.zhihu.com/people/xiao-pei-pei" class="zg-link" title="小培培">小培培</a>、</span><span class="user-block"><a data-tip="p$t$xiang-bing" href="http://www.zhihu.com/people/xiang-bing" class="zg-link" title="向兵">向兵</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="487268" data-action="/answer/content">
+
+<textarea class="content hidden">
+高中，一次当着全校面的国旗下讲话。&lt;br&gt;&lt;br&gt;我们高中有“国旗下表彰和批评”的传统，在开学的头几个周，会开一个表彰会，表扬一下上个学期期末考试中各个年级名列前茅的几个好孩子。&lt;br&gt;&lt;br&gt;高二的时候，为了吸引那个妹子的注意，我状若疯狗般学了一年，最后拿到了个全校第二的成绩。高三开学，上台作为学生代表说了一段感言（替代那个在人前讲话就要晕厥的年级第一），很没营养的那种，就是感谢老师感谢学校大家一起来好好学习啊……&lt;br&gt;&lt;br&gt;我匆匆念完，把稿子顺手放进右侧兜里就灰溜溜地下台了，没有回到班级归队，不是因为我的发言——我脸皮这么厚，不会因为说假话而心虚，我心虚是因为我知道，接下来该是我丢人的时候了……&lt;br&gt;&lt;br&gt;接下来，教导主任出场，开始念上周学校后门两个班级“打群架”的处理结果，”留校察看“和”通报批评“的人要上台当着全校3000多师生的面念检查。对一个暗恋女孩还在台下的17岁少年来说，我感觉这个时候“开除”似乎变成了一个更好的选择……&lt;br&gt;&lt;br&gt;想到那双明亮的大眼睛，我真恨不得找个地缝钻进去。&lt;br&gt;&lt;br&gt;我们几个狐朋狗友灰溜溜的上台，教导主任“六爷”看见我也是愣了半天，台下的笑声也渐渐传开了……刚接受完表彰就上台作检讨的，我好像还是我们高中建校60年来头一个。&lt;br&gt;&lt;br&gt;教导主任的表情，台下声音渐大的哄笑声，我损友们台下看热闹不嫌事儿大的起哄声，还有我能感受到的那双大眼睛清澈的目光……混合在一起，烧掉了我所有的智力。&lt;br&gt;&lt;br&gt;轮到我了，我从右侧兜掏出我的“检讨书”，颤声念到——&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;“我能取得今天的成绩，首先要感谢班主任姚老师对我的教育栽培……”&lt;/b&gt;
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2014-11-19" target="_blank" href="/question/20767176/answer/33666419">编辑于 18:28</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+高中，一次当着全校面的国旗下讲话。我们高中有“国旗下表彰和批评”的传统，在开学的头几个周，会开一个表彰会，表扬一下上个学期期末考试中各个年级名列前茅的几个好孩子。高二的时候，为了吸引那个妹子的注意，我状若疯狗般学了一年，最后拿到了个全校第…
+
+<a href="/question/20767176/answer/33666419" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-487268"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>114 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-q
+
+"
+id="feed-q4579907_51_0"
+data-type="q"
+data-feedtype="QUESTION_CREATE">
+
+
+
+<meta itemprop="question-id" content="4579907">
+<meta itemprop="question-url-token" content="30993379">
+
+
+<meta itemprop="ZReactor" data-id="4579907" data-meta="{&quot;source&quot;: [[&quot;member&quot;, &quot;bf43e7f6496d4987147a7bfd7597f18a&quot;]], &quot;source_type&quot;: &quot;member_ask_question&quot;, &quot;answers&quot;: 4, &quot;comments&quot;: 5, &quot;follows&quot;: 65}" >
+<div class="avatar">
+<a title="淺野早苗"
+data-tip="p$t$rsxpn"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/rsxpn">
+<img src="http://pic3.zhimg.com/a1f1766cdd2c39ec5d9a3aa17dae4586_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$rsxpn" href="http://www.zhihu.com/people/rsxpn" target="_blank" class="zg-link" title="淺野早苗">淺野早苗</a> 
+提了一个问题
+
+
+<span class="time" data-timestamp="1433504791000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30993379">有哪些知友通过 @winter 的脚本替换了答案（离开了知乎）？</a></h2>
+
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix">
+<div class="zm-meta-panel">
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4579907"><i class="z-icon-follow"></i>关注问题</a>
+<a href="#" name="toggle-comment" class="meta-item toggle-comment" >
+<i class="z-icon-comment"></i>5 条评论</a>
+<span class="zg-bull">&bull;</span> <a href="/question/30993379" class="meta-item" target="_blank">4 个回答</a>
+<a href="javascript:;" name="collapse" class="meta-item collapse"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15488051_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4293206">
+<meta itemprop="question-url-token" content="30277318">
+
+
+<meta itemprop="answer-id" content="15488051">
+<meta itemprop="answer-url-token" content="50219872">
+
+<meta itemprop="ZReactor" data-id="15488051" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 9, &quot;voteups&quot;: 162, &quot;comments&quot;: 28, &quot;source&quot;: [[&quot;member&quot;, &quot;052982d06defa3f9ad6703c92db0feff&quot;]]}" >
+<div class="avatar">
+<a title="一笑风云过"
+data-tip="p$t$yixiao-feng-yun-guo"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/yixiao-feng-yun-guo">
+<img src="http://pic4.zhimg.com/4259b5de6158493b10b0c5628d9d6267_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$yixiao-feng-yun-guo" href="http://www.zhihu.com/people/yixiao-feng-yun-guo" target="_blank" class="zg-link" title="一笑风云过">一笑风云过</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433504754000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30277318">中国真的有很多穷人吗？</a></h2>
+<div class="entry-body "
+data-aid="15488051"
+data-atoken="50219872"
+data-collapsed="False"
+data-created="1433503529"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="162">162</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">162</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+<h3 class="zm-item-answer-author-wrap">匿名用户</h3></div>
+
+<div class="zm-item-vote-info " data-votecount="162">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$chen-chen-75-94-48" href="http://www.zhihu.com/people/chen-chen-75-94-48" class="zg-link" title="请叫我女王大人">请叫我女王大人</a>、</span><span class="user-block"><a data-tip="p$t$yang-yang-62-74-52" href="http://www.zhihu.com/people/yang-yang-62-74-52" class="zg-link" title="杨杨">杨杨</a>、</span><span class="user-block"><a data-tip="p$t$jin-zi-han-98" href="http://www.zhihu.com/people/jin-zi-han-98" class="zg-link" title="金子涵">金子涵</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4293206" data-action="/answer/content">
+
+<textarea class="content hidden">
+作为这个问题下 &lt;a data-hash=&quot;492da937a221af168c240dd56fc314ce&quot; href=&quot;http://www.zhihu.com/people/492da937a221af168c240dd56fc314ce&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@肆涛&quot; data-tip=&quot;p$b$492da937a221af168c240dd56fc314ce&quot;&gt;@肆涛&lt;/a&gt;回答的地区走出来的一个学生。有幸本科毕业于某211，研究生某211在读中。&lt;br&gt;其实很多答案都说得很清楚了，但是作为一个在那种环境下成长起来的幸运儿。看了这么些答案心中感慨万千，顺带作为一个非旁观者而是艰苦环境下成长的人来说说那时候自己的生活。再次感谢 &lt;a data-hash=&quot;492da937a221af168c240dd56fc314ce&quot; href=&quot;http://www.zhihu.com/people/492da937a221af168c240dd56fc314ce&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@肆涛&quot; data-tip=&quot;p$b$492da937a221af168c240dd56fc314ce&quot;&gt;@肆涛&lt;/a&gt;，用一下你的珍贵图，因为我自己没有那时候自己的照片。（如果不行请回复我会删除） &lt;br&gt;&lt;br&gt;开始吧，答案这么也不知道有没有人看到。我就从图开始说吧：&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/80e1f0ddc31477b01286e28bd66694e9_b.jpg&quot; data-rawwidth=&quot;534&quot; data-rawheight=&quot;380&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;534&quot; data-original=&quot;http://pic2.zhimg.com/80e1f0ddc31477b01286e28bd66694e9_r.jpg&quot;&gt;&lt;br&gt;没有错，我们之前的教室就是这样，黑板是水泥加上黑色油漆直接刷墙上的。没有黑板擦，都是用破布擦。黑板特别滑，不好写字，因为墙壁是河沙和石头堆砌的，会裂开，黑板也跟着开裂。&lt;br&gt;我小学的时候全校好像4个老师，我的班主任教我们从1年级到4年级，因为他文化不高，再高他教不了，他是一个残疾人，腿脚不便，他教我们所有科目除了音乐。他今年刚刚退休，逢人就吹牛逼说我是他教出来的，说我小学很认真很认真，真是的，明明我小学的时候您天天说我调皮，期末考试家访都是说我人挺聪明但是不踏实不够努力好不( ⊙ o ⊙ )！害我老被家里说，哈哈，谢谢老师您，以后回家去看您。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/b27ea7f351c985c7698a17d1cc4e02a7_b.jpg&quot; data-rawwidth=&quot;420&quot; data-rawheight=&quot;307&quot; class=&quot;content_image&quot; width=&quot;420&quot;&gt;下雨天漏水，教室是没有水泥地板的，家里也一样，夏天扫地特别灰，不扫地其实也很灰（所以大家都是脏兮兮的）&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/56fae748c4d05fc7933f2a46518b0c8c_b.jpg&quot; data-rawwidth=&quot;483&quot; data-rawheight=&quot;299&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;483&quot; data-original=&quot;http://pic1.zhimg.com/56fae748c4d05fc7933f2a46518b0c8c_r.jpg&quot;&gt;操场更不是水泥了，做操一刮风就是灰，打球也是灰，都是灰，下雨全是泥泞，特别的脏啊，鞋子全湿。脚上能有1斤泥巴掉着。&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/cafc028063840572dc03dd345ecf0482_b.jpg&quot; data-rawwidth=&quot;485&quot; data-rawheight=&quot;583&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;485&quot; data-original=&quot;http://pic3.zhimg.com/cafc028063840572dc03dd345ecf0482_r.jpg&quot;&gt;&lt;img src=&quot;http://pic2.zhimg.com/b28899719cb4e27972825d6804ec5515_b.jpg&quot; data-rawwidth=&quot;413&quot; data-rawheight=&quot;328&quot; class=&quot;content_image&quot; width=&quot;413&quot;&gt;&lt;img src=&quot;http://pic2.zhimg.com/76cfa11623a368db92335e22aa506cf9_b.jpg&quot; data-rawwidth=&quot;441&quot; data-rawheight=&quot;368&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;441&quot; data-original=&quot;http://pic2.zhimg.com/76cfa11623a368db92335e22aa506cf9_r.jpg&quot;&gt;&lt;br&gt;上面3图依次是我们那边的：酸菜和豆角  ，烤土豆，玉米饭。都是我们那边最最最基层普及的食物，前两种我们都蛮喜欢吃的，只是玉米饭这家伙我也和 &lt;a data-hash=&quot;492da937a221af168c240dd56fc314ce&quot; href=&quot;http://www.zhihu.com/people/492da937a221af168c240dd56fc314ce&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@肆涛&quot; data-tip=&quot;p$b$492da937a221af168c240dd56fc314ce&quot;&gt;@肆涛&lt;/a&gt; 一样不太喜欢吃，也说不清楚为什么，很多小伙伴小时候就吃习惯了也接受，我一直都不喜欢吃玉米饭，时至今日也只是比小时候爱吃一点，不过现在一般也不吃，只是现在回家以后去亲戚朋友家如果遇到吃也能吃，但是也不好意思说不喜欢，毕竟怕被说忘本，不过也没小时候吃那么难受。&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/add03cd7a4be66a3d7bac2e21c1b64fb_b.jpg&quot; data-rawwidth=&quot;357&quot; data-rawheight=&quot;220&quot; class=&quot;content_image&quot; width=&quot;357&quot;&gt;&lt;img src=&quot;http://pic3.zhimg.com/ef4afedf027f90a3926df8ea3e38be96_b.jpg&quot; data-rawwidth=&quot;289&quot; data-rawheight=&quot;225&quot; class=&quot;content_image&quot; width=&quot;289&quot;&gt;&lt;img src=&quot;http://pic2.zhimg.com/35bf9d6da7190c0f35fbfc4424a833ed_b.jpg&quot; data-rawwidth=&quot;372&quot; data-rawheight=&quot;559&quot; class=&quot;content_image&quot; width=&quot;372&quot;&gt;这样的衣服今天已经少见了，但是我还在读小学的时候（2003年左右吧）还是有的，衣服磨破了很常见，妈妈说的，笑脏不笑破，补丁什么的裤子上特别多。哦，穿过所谓的城里人救济的衣服（不懂救济衣服的百度查询）。&lt;br&gt;中间图的那种军绿色书包我也用过，不过没图中的破，那种书包很普及的。鞋子就是下图的这种不鞋子，几乎家家母亲都会做，一般流程就是赶集卖鸡蛋或者粮食或者山上采的草药什么的，然后卖的钱再在集市上买塑料的鞋底和布，母亲用棕树或者大片笋壳夹杂布就可以做啦，现在家里还有这种鞋子，现在发展好多了，不怎么穿了，不过很多条件差一些的还是穿的，母亲嫌自己也没有能赚钱的手活，现在的闲暇之余都还会做这种“毛底鞋”（抱歉我不知道在外面这种鞋怎么称呼，有点像北京布鞋的样式，但是不同）去集市卖帮补家用。我之前也想给母亲做个网店卖她的布鞋，但是由于自己能力精力有限，也不知道卖得出去不，做不了推广，何况母亲也是闲暇做鞋，没有货源保证，于是放弃了，想法一直在心里也没有跟母亲提起过。希望以后工作了能让父母不要这么辛苦，远离农门。（作为农村孩子深知农门之苦，说实话：怕了干农活）&lt;br&gt;&lt;img src=&quot;http://pic3.zhimg.com/eb9838d18c6a37ec8b7913dd9ca1fea2_b.jpg&quot; data-rawwidth=&quot;500&quot; data-rawheight=&quot;348&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;500&quot; data-original=&quot;http://pic3.zhimg.com/eb9838d18c6a37ec8b7913dd9ca1fea2_r.jpg&quot;&gt;&lt;img src=&quot;http://pic2.zhimg.com/7076f1e5249f7f4655b2c85061881049_b.jpg&quot; data-rawwidth=&quot;420&quot; data-rawheight=&quot;300&quot; class=&quot;content_image&quot; width=&quot;420&quot;&gt;&lt;img src=&quot;http://pic1.zhimg.com/a9b8e3119e77e08b1ed0953919716bf8_b.jpg&quot; data-rawwidth=&quot;433&quot; data-rawheight=&quot;288&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;433&quot; data-original=&quot;http://pic1.zhimg.com/a9b8e3119e77e08b1ed0953919716bf8_r.jpg&quot;&gt;&lt;img src=&quot;http://pic3.zhimg.com/cb597db3344d2441bf59f27a125451de_b.jpg&quot; data-rawwidth=&quot;263&quot; data-rawheight=&quot;233&quot; class=&quot;content_image&quot; width=&quot;263&quot;&gt;&lt;br&gt;前两图是我们那边标准的：背篓。也许形状和其它地区不太一样。&lt;br&gt;关于农活，如上图示：第一张图是割草，干蕨草。吃过蕨菜的人知道吧，这就是蕨菜大了干了的样子。你们吃的是刚发的蕨草芽。这东西一般是用来垫牛圈或者猪圈的，动物不怎么吃，割嘴。我小时候会故意去割草回来，然后跟母亲要一个捂在玉米仓的果子吃。母亲也乐意。比如上图最后一幅的八月瓜。关于这个瓜还有一个小故事，因为这东西都是野生的，我们会在干农活的时候遇到顺带摘回家捂在粮仓里让它自己熟。后来长大了想知道真实什么水果但是由于我们那边的方言不知道用普通话怎么说这东西，在网上找了很久才知道学名：八月瓜。&lt;br&gt;&lt;br&gt;关于那时候的我们还有一个今天听起来很有意思的假期：农忙假。大家都知道，我们的老师本来就是很多民办的，他们教我们很不容易，同样，学生也是。我们都要干活。于是每到农忙季节学校会放假，老师学生回家帮忙干活，没事，我们学校就几个老师（没有女老师）100个学生（我们那时候学生比较多，现在由于计划生育和条件发展，学生越来越少了，今年回家我们那里的小学没有3年级的学生了，一年级就10个学生了）&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/1914d63d9523ccc3f5f71ecfb4799610_b.jpg&quot; data-rawwidth=&quot;456&quot; data-rawheight=&quot;313&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;456&quot; data-original=&quot;http://pic1.zhimg.com/1914d63d9523ccc3f5f71ecfb4799610_r.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;很多的杜鹃花，很多，山上全是，野生的。贵州不是有个景区叫：百里杜鹃么，我没去过，大家可以网上了解一下，欢迎大家来玩。&lt;br&gt;我们会摘很多花，然后插在塑料瓶子里，放家里，放教室里。虽然家很破全是泥巴房，学校也是。但是花不会挑剔，默默装点由盛开到枯萎，那是我们少有的审美情趣。&lt;br&gt;&lt;img src=&quot;http://pic2.zhimg.com/71919a2d6419a71266588fa9fdc3fe55_b.jpg&quot; data-rawwidth=&quot;510&quot; data-rawheight=&quot;327&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;510&quot; data-original=&quot;http://pic2.zhimg.com/71919a2d6419a71266588fa9fdc3fe55_r.jpg&quot;&gt;&lt;br&gt;不说了，没有江河地区，游泳只能这样（我们叫：凫水）。泥水里面打滚。小时候我没下过水，一下家里严厉规定不许，学校不许，每次和小伙伴放学偷偷去水塘里游泳我都是站在旁边的地坎上看的。直到后来一个小伙伴在泥地里踩到一块玻璃碎片，把脚划了一大个口子，肉白花花往外翻，我就再更不敢下水了，怕。所以我游泳的小理想是在大学游泳池里学会的。&lt;br&gt;&lt;br&gt;&lt;img src=&quot;http://pic1.zhimg.com/8833301ffc207bb5aace03c76ad36200_b.jpg&quot; data-rawwidth=&quot;473&quot; data-rawheight=&quot;602&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;473&quot; data-original=&quot;http://pic1.zhimg.com/8833301ffc207bb5aace03c76ad36200_r.jpg&quot;&gt;这张照片让我想起了08年的贵州雪凝灾害，大家记得么，我记得当时放假回不了家，去坐火车到了离家最近的山区小站，就是那种绿皮火车才停的小站下，然后走山路回家，开学了，还是凝冻灾害。又走路去小站，坐火车去城里，晚上9点过火车被停在山里，由于不知道怎么办又年轻有经历，下了车直接从山里走去城里，在没有一点灯光的山路上，只有夜里雪地泛起的白光。（那时候没有电话）&lt;br&gt;&lt;br&gt;&lt;b&gt;最后：&lt;/b&gt;&lt;br&gt;回忆太多易伤神，偶然看到这个问题，偶然看到第一个答案居然是写我成长的地方，突然就有很多感受涌上心头。&lt;br&gt;&lt;br&gt;真的，这些地方的人真心不容易，坚强与任性，已融入我的骨血，我有幸比那里的大多数同辈不同辈的父老乡亲走的远了那么一点，有幸看得远了那么一点，他们的好品质与不好的习惯我都有，来到外面，见了更多，遇到更多，也养成了外面的很多好的品质和不好的习惯，这山里山外的交融，让我可以包容更多（特别是类似条件好的地方的人和条件差的地区的人看待事物观点和处事方式冲突的时候，我特别能理解）。&lt;br&gt;&lt;br&gt;最后感谢 &lt;a data-hash=&quot;492da937a221af168c240dd56fc314ce&quot; href=&quot;http://www.zhihu.com/people/492da937a221af168c240dd56fc314ce&quot; class=&quot;member_mention&quot; data-editable=&quot;true&quot; data-title=&quot;@肆涛&quot; data-tip=&quot;p$b$492da937a221af168c240dd56fc314ce&quot;&gt;@肆涛&lt;/a&gt; 这样的支教团体与个人，有了你们，条件差的地区的孩子们有机会接触山区老师给不了的东西，带给他们视野也新事物，如果他们够幸运比如像我一样，你们的某一个小事物小行为与不经意，就是像种子，落在他们的脑海里，如果他再够有幸和努力，这个种子能开花，发芽。他们的一生，就改变了。 &lt;br&gt;&lt;br&gt;PS：不太推荐大学生盲目去支教，因为你的爱心，也许就是伤害，我不知道你们懂不懂想表达的意思，这也许就是一个两种环境下成长的我的一种感受。如果一定要去，多多考虑那些孩子，他们生长环境和你们不一样，所以很多观点和习惯不一样。伤害了别人往往都感觉不出来。（这里我就不讨论支教是为了自己简历贴金，去体验生活，去拍照旅游发微博朋友圈那种了，虽然这样的人很多）&lt;br&gt;&lt;br&gt;有在补充吧 ，还没吃晚饭呢。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 19:25" target="_blank" href="/question/30277318/answer/50219872">编辑于 21:05</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img src="http://pic2.zhimg.com/80e1f0ddc31477b01286e28bd66694e9_xld.jpg" data-rawwidth="534" data-rawheight="380" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic2.zhimg.com/80e1f0ddc31477b01286e28bd66694e9_r.jpg">
+作为这个问题下 <a data-hash="492da937a221af168c240dd56fc314ce" href="http://www.zhihu.com/people/492da937a221af168c240dd56fc314ce" class="member_mention" data-editable="true" data-title="@肆涛" data-tip="p$b$492da937a221af168c240dd56fc314ce">@肆涛</a>回答的地区走出来的一个学生。有幸本科毕业于某211，研究生某211在读中。其实很多答案都说得很清楚了，但是作为一个在那种环境下成长起来的幸运儿。看了这么些答案心中感慨万千，顺带作为一个非旁观者而是艰苦环境下成长的人来说说那时…
+
+<a href="/question/30277318/answer/50219872" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4293206"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>28 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15370381_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4545998">
+<meta itemprop="question-url-token" content="30909334">
+
+
+<meta itemprop="answer-id" content="15370381">
+<meta itemprop="answer-url-token" content="49926608">
+
+<meta itemprop="ZReactor" data-id="15370381" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 0, &quot;voteups&quot;: 10, &quot;comments&quot;: 9, &quot;source&quot;: [[&quot;member&quot;, &quot;78e3b98074a915b222ae1be4ab038a6e&quot;]]}" >
+<div class="avatar">
+<a title="赵劼"
+data-tip="p$t$jeffz"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/jeffz">
+<img src="http://pic1.zhimg.com/da8e974dc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$jeffz" href="http://www.zhihu.com/people/jeffz" target="_blank" class="zg-link" title="赵劼">赵劼</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433503738000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30909334">苹果文化是否认为：「你能做我的员工，是你的荣幸」？对员工是否小气？</a></h2>
+<div class="entry-body "
+data-aid="15370381"
+data-atoken="49926608"
+data-collapsed="False"
+data-created="1433309070"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="10">10</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">10</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+<h3 class="zm-item-answer-author-wrap">匿名用户</h3></div>
+
+<div class="zm-item-vote-info " data-votecount="10">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$tenglongroy" href="http://www.zhihu.com/people/tenglongroy" class="zg-link" title="Roy Tenglong">Roy Tenglong</a>、</span><span class="user-block"><a data-tip="p$t$hei-hei-38-43" href="http://www.zhihu.com/people/hei-hei-38-43" class="zg-link" title="黑黑">黑黑</a>、</span><span class="user-block"><a data-tip="p$t$kangni" href="http://www.zhihu.com/people/kangni" class="zg-link" title="kangni">kangni</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4545998" data-action="/answer/content">
+
+<textarea class="content hidden">
+让我想起了，曾经有妹子说，我做你女朋友是你的荣幸
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/30909334/answer/49926608">发布于 2015-06-03</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+让我想起了，曾经有妹子说，我做你女朋友是你的荣幸
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4545998"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>9 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-p
+
+"
+id="feed-p201978_10214_0"
+data-type="p"
+data-feedtype="ARTICLE_VOTE_UP">
+
+<meta itemprop="post-id" content="201978">
+<meta itemprop="post-url-token" content="20052497">
+
+
+
+
+<meta itemprop="ZReactor" data-id="201978" data-meta="{&quot;source_type&quot;: &quot;member_voteup_article&quot;, &quot;voteups&quot;: 2061, &quot;comments&quot;: 98, &quot;source&quot;: [[&quot;member&quot;, &quot;78e3b98074a915b222ae1be4ab038a6e&quot;], [&quot;column&quot;, 2737]]}" >
+<div class="avatar">
+<a title="赵劼"
+data-tip="p$t$jeffz"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/jeffz">
+<img src="http://pic1.zhimg.com/da8e974dc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$jeffz" href="http://www.zhihu.com/people/jeffz" target="_blank" class="zg-link" title="赵劼">赵劼</a> 
+ 赞了 <a class="question_link" target="_blank" href="http://zhuanlan.zhihu.com/wanglu" data-tip="c$t$wanglu">王路的粽子铺</a> 中的一篇文章
+
+
+<span class="time" data-timestamp="1433503280000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="post-link" target="_blank" href="http://zhuanlan.zhihu.com/wanglu/20052497">武松纯粹在哪里？</a></h2>
+<div class="entry-body post-body">
+
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2061">2061</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">2061</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+
+<div class="author-info">
+<a href="/people/wang-lu-43-95" data-tip="p$t$wang-lu-43-95" class="name">王路</a>，公众号：王路在隐身
+</div>
+
+<div class="zm-item-vote-info " data-votecount="2061">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$jin-ge-79-5" href="http://www.zhihu.com/people/jin-ge-79-5" class="zg-link" title="金阁">金阁</a>、</span><span class="user-block"><a data-tip="p$t$ao-li-an-pai-ke-si" href="http://www.zhihu.com/people/ao-li-an-pai-ke-si" class="zg-link" title="奥利安派克斯">奥利安派克斯</a>、</span><span class="user-block"><a data-tip="p$t$meng-yichang-36" href="http://www.zhihu.com/people/meng-yichang-36" class="zg-link" title="梦一场">梦一场</a>、</span><span class="user-block"><a data-tip="p$t$ding-ding-wang" href="http://www.zhihu.com/people/ding-ding-wang" class="zg-link" title="丁丁王">丁丁王</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="post-content">
+<textarea class="content hidden">&lt;p&gt;武松打蒋门神的时候，是不认得蒋门神的。要打一个面都没见过的人，得先回答一个问题：你凭什么打我？假如是李逵去打，这个问题就不用回答，直接拿板斧劈头砍过去就行。但是，武松需要回答这个问题。&lt;/p&gt;&lt;br&gt;&lt;p&gt;为了回答这个问题，武松看见蒋门神躺在椅子上扇扇子的时候，没有直接打过去，也没有朝他搭话，而是溜到了不远处蒋门神开的酒店里。武松要了一碗酒，尝了一口就吐了，说不好。老板娘，也就是蒋门神的小妾，又盛了好一点的酒给武松。武松尝了一口，又吐了，说不好。小妾又盛了第三碗，这次，是把店里压箱底的酒拿出来了。要是二流的小说家讲这个故事，到这里，武松就会继续尝一口，吐掉，然后激怒老板娘，开打。但那样就俗套了。武松尝了一口，点点头：这酒有点意思。&lt;/p&gt;&lt;br&gt;&lt;p&gt;为什么武松这一回没有再说酒难喝？这就如同武松要先回答“凭什么打你”这个问题一样，体现了武松的底线。武松是个爱喝酒的人。把正儿八经的好酒端到你面前，你说难喝——就暴露了品位。《红楼梦》里的贾母，这位对吃极为挑剔的老太太，实际上是个审美大师，好吃的，好喝的，好玩的，什么东西好，她心里都有谱。但越是有谱的人越不摆谱。相反，总是摆谱的人，一般都没有什么谱。有的穷措大什么都没见过，为了掩饰自己见识短，见了什么新奇的东西，都说这个不行，那个也不行，批评东，批评西，没有他不批评的。这样的人恰恰暴露出来既不识货又偏偏想装成识货的那种捉襟见肘的努力和笨拙。&lt;/p&gt;&lt;br&gt;&lt;p&gt;武松，不能戴这顶没品位的帽子。酒是好，那就不说二话，再找别的打架由头。不能为了打一场架，把自己的品位给丢了。这就是武松。其实，在杀潘金莲的时候，武松的一举一动也处处体现品位：找来街坊四邻，每个人都拉到武大郎家里，搬好板凳招呼好坐下，士兵守着门，准备好笔墨，事情经过如何，一五一十地记下来。出去找西门庆，身上先别一把剜心尖刀。&lt;/p&gt;&lt;br&gt;&lt;p&gt;武松的有品位体现在他杀人的时候。他没有读过什么书，但实际上，一个人是不是有品位，跟他读多少书，去多少地方旅过游，没有半毛钱关系。书读得再多，不影响一个人干出龌龊的事。大学问家剽窃的事，屡见不鲜。读过书的人骂人，有时候极其恶毒，比不识字的人难听几百倍。这时候，知识往往成为一个人的遮羞布，起到的作用好比一身西装。不能看一个人穿着西装，打着领带，言必称民主自由，就以为此人有多高的操守。真不一定。&lt;/p&gt;&lt;br&gt;&lt;p&gt;宋江的品位，比武松差得远了去了。但是宋江的学问、谈吐，方方面面超过武松。那些方面，作为外在的装饰，适足以让宋江呈现出一幅体面的模样。宋江看上去体面，是因为他内心的曲折复杂不能够光鲜地呈现在纸上。曲衷隐情，经过了文饰，再呈现出来，就是一幅岸然道貌。而武松，这个通身充满草莽气的人，之所以举手投足之处，处处体现出品位，迸发出令人着迷的魅力，是有缘故的。&lt;/p&gt;&lt;br&gt;&lt;p&gt;缘故就是，武松的每一个行为，都干净。包括武松的滥杀无辜，残忍狠辣，蛮不讲理，都干净。就算在武松做出伤天害理的事情的时候，举止行脚依然显得干净——这就是武松最令人着迷的地方。&lt;/p&gt;&lt;br&gt;&lt;p&gt;这种干净，或者说是清白——哪怕武松做了非常不道德的事，看上去也是清清白白磊磊落落的——源于武松设定了一个自己的标准和底线。武松从不逾越自己的底线。同时，又从来无视别的标准。你说武松杀了那么多无辜的人，他道德吗？滥杀无辜本来是十分不道德的事情，但在武松这里，并不显得龌龊。&lt;/p&gt;&lt;br&gt;&lt;p&gt;武松的干净、清白源于他愿意承担一切杀业的后果，从来不逃避。杀完潘金莲西门庆，他提着人头去官府自首，去之前还把郓哥、何九叔的事情处理好。一句话，他办事不拖泥带水，不稀里糊涂。跟武松打交道，他事事都拎得清。&lt;/p&gt;&lt;br&gt;&lt;p&gt;《水浒》里边的人，通常犯了人命官司就跑。武松不跑。到了监牢里，该行贿赂，武松不行。打死可以，贿赂没有。按说到监牢里，给点银子钱，不破坏啥形象，连林冲都这么干。但林冲可以做，宋江可以做，武松不可以。因为武松，有一套他自己的底线。&lt;/p&gt;&lt;br&gt;&lt;p&gt;所以，唯有武松这样的人，可以跟潘金莲唱对台戏。假如潘金莲不是武松的嫂子，是李逵、是宋江、是林冲的嫂子，戏就不好看。因为再没有第二个人，敢当着亲哥哥的面，说嫂子“篱牢犬不入”。别人的眼里能容沙子，武松的眼里却连灰尘都容不得。正因如此，武松极纯粹，有人说李逵纯朴，实际上李逵那是憨，是愚昧不明白事。&lt;/p&gt;&lt;br&gt;&lt;p&gt;而一个懂得世故的人，再想纯粹，就难之又难。武松是懂的，但武松从来不做世故的事。虽然武松眼里洞若观火，但身上没有一丝一毫的妥协。在十字坡上，明知道酒里有蒙汗药，是别人要么躲了，要么当场翻脸了，武松能沉住气。武松是，你想教训我，那我就教训你一个大的。所以，武松虽然是个杀人越货的强盗，但《水浒》里只记载他杀人，不记载他越货。在二龙山上，强盗们都不得不以越货为生，从事实的逻辑上来推断，想必武松也有过具体的操作。但是，书中要模糊处理，因为一旦写白了，武松的形象就要崩塌。&lt;/p&gt;&lt;br&gt;&lt;p&gt;像“智取生辰纲”这种事情，断然不会发生在武松身上。坑蒙拐骗的事情，武松不干。林冲去梁山时要纳投名状。换成武松就不会。要让武松纳投名状，武松扭头就走。武松不是一个可以被别人绑架的人。武松只对自己的标准、自己的意志、自己的品位负责。除此之外，武松不对任何事负责。这就是武松之所以纯粹，之所以杀了那么多无辜的人，还可以得到宽恕和谅解的地方。因为我们都做不到那么纯粹。&lt;/p&gt;&lt;br&gt;&lt;p&gt;为什么整部《水浒》里，最有影响力的老虎要被武松打死呢？因为这事儿拼的不是武力。李逵杀虎，靠的是武力。所以李逵打死的老虎都不算老虎，和虾蟹没有太大区别。正因为不算老虎，才能一下杀四个。武松杀老虎，只能有一次，只能有一个。而且，必须赤手空拳。景阳冈上的老虎，象征自然的神威，象征流俗都不得不畏惧的法则，要对抗这种老虎，唯有最纯粹的人才可以。&lt;/p&gt;&lt;br&gt;&lt;p&gt;微信公众号：i_wanglu&lt;/p&gt;&lt;p&gt;凤凰新闻客户端主笔 王路&lt;/p&gt;&lt;p&gt;版权声明：本文来自凤凰新闻客户端主笔王路，公众号：i_wanglu，转载请通知wanghuan1@ifeng.com，并将本段话一并带走。&lt;/p&gt;</textarea>
+<div class="zh-summary summary clearfix">
+武松打蒋门神的时候，是不认得蒋门神的。要打一个面都没见过的人，得先回答一个问题：你凭什么打我？假如是李逵去打，这个问题就不用回答，直接拿板斧劈头砍过去就行。但是，武松需要回答这个问题。为了回答这个问题，武松看见蒋门神躺在椅子上扇扇子的时候…
+
+<a href="http://zhuanlan.zhihu.com/wanglu/20052497" class="toggle-expand">显示全部</a>
+
+</div>
+<p class="hidden-default"><a class="post-link entry-link" target="_blank" href="http://zhuanlan.zhihu.com/wanglu/20052497">2015-06-01</a></p>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta meta clearfix">
+<div class="zm-meta-panel">
+
+
+<a data-follow="c:link" class="zg-follow meta-item" href="#" id="cl-2737"><i class="z-icon-follow"></i>关注专栏</a>
+
+<a href="#" name="toggle-comment" class="meta-item toggle-comment">
+<i class="z-icon-comment"></i>98 条评论</a>
+<a href="#" class="meta-item zu-autohide" name="share"><i class="z-icon-share"></i>分享</a>
+<span class="zg-bull zu-autohide">•</span>
+<a href="#" class="meta-item zu-autohide js-report">举报</a>
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+<div class="line option-status">
+<a href="http://zhuanlan.zhihu.com/wanglu/20052497" target="_blank">武松纯粹在哪里？</a> 将不在你的动态中显示<!--a href="javascript:;" class="revert-button js-unhide">撤销操作</a-->
+</div>
+<div class="line option-more">
+<a href="javascript:;" class="js-hiderelated" data-type="column" data-id="2737" title="屏蔽专栏"><i class="icon icon-disabled"></i>屏蔽来自 王路的粽子铺 的所有文章</a>
+</div>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15384043_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="454319">
+<meta itemprop="question-url-token" content="20684684">
+
+
+<meta itemprop="answer-id" content="15384043">
+<meta itemprop="answer-url-token" content="49960556">
+
+<meta itemprop="ZReactor" data-id="15384043" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 84, &quot;voteups&quot;: 1100, &quot;comments&quot;: 205, &quot;source&quot;: [[&quot;member&quot;, &quot;2b81947c2821e9d2f47907a51b15e6f8&quot;], [&quot;member&quot;, &quot;052982d06defa3f9ad6703c92db0feff&quot;], [&quot;member&quot;, &quot;7b0512d66dc88401b82ff18fe287259e&quot;]]}" >
+<div class="avatar">
+<a title="恶魔的奶爸Sam"
+data-tip="p$t$e-mo-de-nai-ba"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/e-mo-de-nai-ba">
+<img src="http://pic4.zhimg.com/a43ac5c67c4927db3676c919ba61d903_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$e-mo-de-nai-ba" href="http://www.zhihu.com/people/e-mo-de-nai-ba" target="_blank" class="zg-link" title="恶魔的奶爸Sam">恶魔的奶爸Sam</a>、<a data-tip="p$t$yixiao-feng-yun-guo" href="http://www.zhihu.com/people/yixiao-feng-yun-guo" target="_blank" class="zg-link" title="一笑风云过">一笑风云过</a>、<a data-tip="p$t$xiahao" href="http://www.zhihu.com/people/xiahao" target="_blank" class="zg-link" title="夏昊">夏昊</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433503019000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/20684684">为什么美国有那么多肌肉极其强大的肌肉男？</a></h2>
+<div class="entry-body "
+data-aid="15384043"
+data-atoken="49960556"
+data-collapsed="False"
+data-created="1433326317"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="1100">1100</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">1100</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$sky-park-67" href="/people/sky-park-67">Sky Park</a>，<strong title="来自美国的韩国人" class="zu-question-my-bio">来自美国的韩国人</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="1100">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$zhao-peng-fei-15" href="http://www.zhihu.com/people/zhao-peng-fei-15" class="zg-link" title="赵鹏飞">赵鹏飞</a>、</span><span class="user-block"><a data-tip="p$t$zhou-chu-80" href="http://www.zhihu.com/people/zhou-chu-80" class="zg-link" title="周楚">周楚</a>、</span><span class="user-block"><a data-tip="p$t$yao-yao-xue-li" href="http://www.zhihu.com/people/yao-yao-xue-li" class="zg-link" title="夭夭雪莉">夭夭雪莉</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="454319" data-action="/answer/content">
+
+<textarea class="content hidden">
+我是来自美国的韩国人。我在美国高中的时候已开始了基本的健身。我去年来到北京，也在一家健身房健身。我来分享一下美国的健身有什么不同的。&lt;br&gt;&lt;br&gt;谈健身的问题前我想先说两句。看关于美国的任何问题的时候，你要注意美国有各种各样的人。虽然中国有五十几个小数民族，他们都有差不多一样个习惯。可是美国呢，小数民族不只是从亚洲来的。美国有来自亚洲的，欧洲的，非洲的，南美的等等等等。所以关于什么话题，特别难说“美国人是这样”。&lt;br&gt;&lt;br&gt;1. 美国人没什么比中国人厉害的健身天赋：）&lt;br&gt;在美国长大的很多亚洲人的肌肉也特别厉害。下边图片里的是在美国网上红人。除了他们以外也好多。我在美国上高中的时候有的亚洲同学们的身体也很壮，很多肌肉。所以呢，肌肉不只是白人，黑人能得到的。大家都要自信！&lt;br&gt;&lt;img src=&quot;http://pic4.zhimg.com/522e5ddd3a67c9f2df5f20eea1d018af_b.jpg&quot; data-rawwidth=&quot;200&quot; data-rawheight=&quot;139&quot; class=&quot;content_image&quot; width=&quot;200&quot;&gt;&lt;img src=&quot;http://pic3.zhimg.com/c73e6ccc06847083d727e8ab102c734e_b.jpg&quot; data-rawwidth=&quot;320&quot; data-rawheight=&quot;180&quot; class=&quot;content_image&quot; width=&quot;320&quot;&gt;&lt;img src=&quot;http://pic4.zhimg.com/c3a5c2eb79e4192d2d12ef45e35ffcd3_b.jpg&quot; data-rawwidth=&quot;168&quot; data-rawheight=&quot;215&quot; class=&quot;content_image&quot; width=&quot;168&quot;&gt;&lt;br&gt;2. 那美国怎么让连亚洲人都变成肌男呢？我觉得是生活习惯的差异。&lt;br&gt;第一，吃得不一样。健身一半是锻炼，很重要的另一半是营养。有肌肉需要多吃蛋白质。可是中国人吃饭的时候有很多米饭或者面条。我在北京健身，营养部分很难解决！不能坚持我以前在美国吃得习惯。在中国吃什么菜都是跟着米饭或者面条。&lt;br&gt;可能你现在想想“美国人不是吃面包吗？” 对，但是没有中国人爱吃米饭那么多。&lt;br&gt;第二，很多美国人（不是所有的）爱参加各种各样的运动。所以对美国人来说健身也是很自然的，没有那么陌生。去健身不是什么特别的事。年轻人，老人，男女的都很随便去健身。而且，不一定要靠教练。跟别人互相切磋切磋就可以了。我也是这样学习的。&lt;br&gt;&lt;br&gt;3. 美国的bodybuilding专业历史很长。中国，亚洲都比不了美国。&lt;br&gt;在美国以前Arnold Schwarzenegger是个professional bodybuilder的时候健身开始流行。（应该是60年代吧）现在世界上大部分的关于健身知识是从这时候开始发达的。结果，现在美国普通人的健身知识比中国人的深一点。所以一般来说美国人会健身得比较好。&lt;br&gt;&lt;br&gt;这些只是我个人的想法。而且我来再说一遍，美国有各种各样的人。特别难说美国全国是什么样的。最后我想说亚洲人，中国人，美国人，我们身体的根本是差不多一样的。大家都要自信，努力锻炼，好好学习。大家跟我一起加油！&lt;br&gt;&lt;br&gt;***如果你看不懂我写的话真抱歉。我的中文不太好。我在中国学汉语学了一年了。我只想跟大家分享一下我的看法！
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/20684684/answer/49960556">发布于 2015-06-03</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img src="http://pic4.zhimg.com/522e5ddd3a67c9f2df5f20eea1d018af_xld.jpg" data-rawwidth="200" data-rawheight="139" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic4.zhimg.com/522e5ddd3a67c9f2df5f20eea1d018af_r.jpg">
+我是来自美国的韩国人。我在美国高中的时候已开始了基本的健身。我去年来到北京，也在一家健身房健身。我来分享一下美国的健身有什么不同的。谈健身的问题前我想先说两句。看关于美国的任何问题的时候，你要注意美国有各种各样的人。虽然中国有五十几个小数…
+
+<a href="/question/20684684/answer/49960556" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-454319"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>205 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15459613_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="3744194">
+<meta itemprop="question-url-token" content="28902940">
+
+
+<meta itemprop="answer-id" content="15459613">
+<meta itemprop="answer-url-token" content="50149037">
+
+<meta itemprop="ZReactor" data-id="15459613" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 55, &quot;voteups&quot;: 36, &quot;comments&quot;: 24, &quot;source&quot;: [[&quot;member&quot;, &quot;5d7e364e912db8659aa02b47326b3e83&quot;]]}" >
+<div class="avatar">
+<a title="高科"
+data-tip="p$t$gao-ke-69"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/gao-ke-69">
+<img src="http://pic1.zhimg.com/7e91f8c90_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$gao-ke-69" href="http://www.zhihu.com/people/gao-ke-69" target="_blank" class="zg-link" title="高科">高科</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433502572000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/28902940">如何瘦腿，拥有一双长直腿？</a></h2>
+<div class="entry-body "
+data-aid="15459613"
+data-atoken="50149037"
+data-collapsed="False"
+data-created="1433469366"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="36">36</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">36</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$dou-bi-da-shu-de-xiao-peng-you" href="/people/dou-bi-da-shu-de-xiao-peng-you">逗比大叔的小朋友</a>，<strong title="从前，有个小朋友遇到了一个逗比的大叔。所以，就有了这个微博。" class="zu-question-my-bio">从前，有个小朋友遇到了一个逗比的大叔。…</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="36">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$millerrrrrrrrrrr" href="http://www.zhihu.com/people/millerrrrrrrrrrr" class="zg-link" title="Millerrrrrrrrrrr">Millerrrrrrrrrrr</a>、</span><span class="user-block"><a data-tip="p$t$iris-li-22" href="http://www.zhihu.com/people/iris-li-22" class="zg-link" title="iris li">iris li</a>、</span><span class="user-block"><a data-tip="p$t$guan-guan-30" href="http://www.zhihu.com/people/guan-guan-30" class="zg-link" title="关关">关关</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="3744194" data-action="/answer/content">
+
+<textarea class="content hidden">
+啊哈哈哈……终于遇到个我能够回答d的问题了，亲身实践，瘦的话不敢说，说说直吧，俗话说没图说个※※呀，先上图～&lt;img data-rawheight=&quot;3264&quot; data-rawwidth=&quot;2448&quot; src=&quot;http://pic4.zhimg.com/eec2d4eadd26e43cad014f80ffb8b5d3_b.jpg&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;2448&quot; data-original=&quot;http://pic4.zhimg.com/eec2d4eadd26e43cad014f80ffb8b5d3_r.jpg&quot;&gt;&lt;br&gt;这张图拍摄于今年的4月16日，本身也是属于梨形身材，腿型不好更悲催了！(/&quot;≡ _ ≡)/~┴┴&lt;br&gt;&lt;img data-rawheight=&quot;3264&quot; data-rawwidth=&quot;2448&quot; src=&quot;http://pic1.zhimg.com/f1892aac3129734b5db736b878fde310_b.jpg&quot; class=&quot;origin_image zh-lightbox-thumb&quot; width=&quot;2448&quot; data-original=&quot;http://pic1.zhimg.com/f1892aac3129734b5db736b878fde310_r.jpg&quot;&gt;&lt;br&gt;这一张拍摄于5月5日，虽然腿还是不细，但是能看出腿型有明显改善啦！✺◟(∗❛ัᴗ❛ั∗)◞✺&lt;br&gt;在这期间我做了什么呢？！(⃔ *`꒳´ * )⃕↝&lt;br&gt;答案就是&lt;a href=&quot;http://www.zhihu.com/people/5d7e364e912db8659aa02b47326b3e83&quot; data-hash=&quot;5d7e364e912db8659aa02b47326b3e83&quot; class=&quot;member_mention&quot; data-tip=&quot;p$b$5d7e364e912db8659aa02b47326b3e83&quot;&gt;@高科&lt;/a&gt;教练在另一个关于矫正腿型的回答里教的各种拉伸办法，高教练的办法真的很很很管用啊啊啊啊！而且我不是每天都做哦，这样也能很有效果。需要的话可以去我的收藏《练练练》里面找找，对照找出自己属于那种腿型，然后做相应的训练就好啦！&lt;br&gt;前几天还发现了微博上一个叫壁花小姐在厨房健身的博主出的一个盆骨女王操的练习，现在正在两个练习一起做啦，坚持就是胜利！&lt;br&gt;希望对你有帮助啦！
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/28902940/answer/50149037">发布于 09:56</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+<img data-rawheight="3264" data-rawwidth="2448" src="http://pic4.zhimg.com/eec2d4eadd26e43cad014f80ffb8b5d3_xld.jpg" class="origin_image inline-img zh-lightbox-thumb" data-original="http://pic4.zhimg.com/eec2d4eadd26e43cad014f80ffb8b5d3_r.jpg">
+啊哈哈哈……终于遇到个我能够回答d的问题了，亲身实践，瘦的话不敢说，说说直吧，俗话说没图说个※※呀，先上图～这张图拍摄于今年的4月16日，本身也是属于梨形身材，腿型不好更悲催了！(/"≡ _ ≡)/~┴┴这一张拍摄于5月5日，虽然腿还是不细，但是能看出…
+
+<a href="/question/28902940/answer/50149037" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-3744194"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>24 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15487380_101_0"
+data-type="a"
+data-feedtype="ANSWER_CREATE">
+
+
+
+<meta itemprop="question-id" content="4579431">
+<meta itemprop="question-url-token" content="30992181">
+
+
+<meta itemprop="answer-id" content="15487380">
+<meta itemprop="answer-url-token" content="50218245">
+
+<meta itemprop="ZReactor" data-id="15487380" data-meta="{&quot;source_type&quot;: &quot;member_answer_question&quot;, &quot;favourites&quot;: 1, &quot;voteups&quot;: 65, &quot;comments&quot;: 20, &quot;source&quot;: [[&quot;member&quot;, &quot;78e3b98074a915b222ae1be4ab038a6e&quot;]]}" >
+<div class="avatar">
+<a title="赵劼"
+data-tip="p$t$jeffz"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/jeffz">
+<img src="http://pic1.zhimg.com/da8e974dc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$jeffz" href="http://www.zhihu.com/people/jeffz" target="_blank" class="zg-link" title="赵劼">赵劼</a> 
+回答了该问题
+
+
+<span class="time" data-timestamp="1433502469000">2 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30992181">程序员跳槽需要考虑新公司产品是否低俗，是否作恶吗？</a></h2>
+<div class="entry-body "
+data-aid="15487380"
+data-atoken="50218245"
+data-collapsed="False"
+data-created="1433502467"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="65">65</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">65</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-vote-info " data-votecount="65">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$li-you-27-23" href="http://www.zhihu.com/people/li-you-27-23" class="zg-link" title="李游">李游</a>、</span><span class="user-block"><a data-tip="p$t$c447279704" href="http://www.zhihu.com/people/c447279704" class="zg-link" title="李泽华">李泽华</a>、</span><span class="user-block"><a data-tip="p$t$lammer-ren" href="http://www.zhihu.com/people/lammer-ren" class="zg-link" title="lammer ren">lammer ren</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4579431" data-action="/answer/content">
+
+<textarea class="content hidden">
+任何一个方面都只不过是加减分项，没有说因为某个方面有什么问题就绝对不行。最简单的，给你年薪1000w，让你去开发某长城，你去么？说实话，我说不定都会去啊……所以你这个所谓产品太low，也不妨折算成钱来看。例如他们开20w？略纠结。50w？好心动。100w？！汪汪汪快带我走……
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 19:07" target="_blank" href="/question/30992181/answer/50218245">编辑于 19:36</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+任何一个方面都只不过是加减分项，没有说因为某个方面有什么问题就绝对不行。最简单的，给你年薪1000w，让你去开发某长城，你去么？说实话，我说不定都会去啊……所以你这个所谓产品太low，也不妨折算成钱来看。例如他们开20w？略纠结。50w？好心动。100w？…
+
+<a href="/question/30992181/answer/50218245" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4579431"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>20 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15164997_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4279448">
+<meta itemprop="question-url-token" content="30242587">
+
+
+<meta itemprop="answer-id" content="15164997">
+<meta itemprop="answer-url-token" content="49414649">
+
+<meta itemprop="ZReactor" data-id="15164997" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 135, &quot;voteups&quot;: 2106, &quot;comments&quot;: 453, &quot;source&quot;: [[&quot;member&quot;, &quot;78e3b98074a915b222ae1be4ab038a6e&quot;]]}" >
+<div class="avatar">
+<a title="赵劼"
+data-tip="p$t$jeffz"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/jeffz">
+<img src="http://pic1.zhimg.com/da8e974dc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$jeffz" href="http://www.zhihu.com/people/jeffz" target="_blank" class="zg-link" title="赵劼">赵劼</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433502093000">3 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30242587">学日语后你染上了什么毛病？</a></h2>
+<div class="entry-body "
+data-aid="15164997"
+data-atoken="49414649"
+data-collapsed="False"
+data-created="1432899432"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="2106">2106</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">2106</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$cogito" href="/people/cogito">佐藤謙一</a>，<strong title="禪茶一味" class="zu-question-my-bio">禪茶一味</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="2106">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$chen-sa-sa-70" href="http://www.zhihu.com/people/chen-sa-sa-70" class="zg-link" title="陈洒洒">陈洒洒</a>、</span><span class="user-block"><a data-tip="p$t$zhang-kai-60" href="http://www.zhihu.com/people/zhang-kai-60" class="zg-link" title="张凯">张凯</a>、</span><span class="user-block"><a data-tip="p$t$zhao-jia-run-71" href="http://www.zhihu.com/people/zhao-jia-run-71" class="zg-link" title="赵假润">赵假润</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4279448" data-action="/answer/content">
+
+<textarea class="content hidden">
+‫‪   ‫‪   ‫&lt;br&gt; ‫‪   ‫‪  ‪  &lt;br&gt;大家回答的都好奇怪……&lt;br&gt;&lt;br&gt;雖然沒有「學過」日語，現在也不是每天都需要說日語，不過作爲二十年的日語者，我好像從來也沒有覺得口語習慣中非要有「啊咧」「寒っ！」「ええと」這種東西。&lt;br&gt;&lt;br&gt;如果你家小孩學日語之後嘴上停不下這些，最好的方式真的還是打一頓比較好…&lt;br&gt;&lt;br&gt;當然，我最討厭的還是一些在說他自己國家的語言時卻習慣性說「そうか」的外国人，也就是中文所说的 sōga。（顺便想问一下为什么不是 sōka？明明不是 ga 啊…）。&lt;br&gt;&lt;br&gt;遇見那样的人士，是真的會上我的黑名单的，从此之後不要想進我家門，不要想吃我做的任何東西。就是這样的心情。&lt;br&gt;&lt;br&gt;吃飯前也真的不必非要用日文对不會日文的大家说「いただきます」的吧？用中文說「我好好吃飯啦」之類，不是一樣的嗎。&lt;br&gt;&lt;br&gt;所以，我覺得這些個根本就不是語言導致的問題，這個是幼稚的問題。不禮貌地說一句，這個純粹是希望別人知道自己在說外文吧。&lt;br&gt; ‫‪   ‫‪  &lt;br&gt; ‫ ‫‪   ‫‪  ‪  &lt;br&gt;總之，如果跟我學習日文的朋友嘴上動不動就「啊咧咧」，我肯定要把他頭打到啊咧咧。&lt;br&gt; ‫ ‫‪ ‫‪    ‪   ‫‪  &lt;br&gt; ‫ ‫‪   ‫‪  ‪   ‫‪  &lt;br&gt; ‫ ‫‪   ‫‪  ‪   ‫‪  &lt;br&gt; ‫ ‫‪   ‫ ‫‪   ‫‪  ‪‪  ‫‪
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 2015-05-29" target="_blank" href="/question/30242587/answer/49414649">编辑于 2015-05-29</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+‫‪ ‫‪ ‫ ‫‪ ‫‪ ‪ 大家回答的都好奇怪……雖然沒有「學過」日語，現在也不是每天都需要說日語，不過作爲二十年的日語者，我好像從來也沒有覺得口語習慣中非要有「啊咧」「寒っ！」「ええと」這種東西。如果你家小孩學日語之後…
+
+<a href="/question/30242587/answer/49414649" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4279448"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>453 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a8313020_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="2641062">
+<meta itemprop="question-url-token" content="26145477">
+
+
+<meta itemprop="answer-id" content="8313020">
+<meta itemprop="answer-url-token" content="32317862">
+
+<meta itemprop="ZReactor" data-id="8313020" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 97, &quot;voteups&quot;: 1195, &quot;comments&quot;: 67, &quot;source&quot;: [[&quot;member&quot;, &quot;78e3b98074a915b222ae1be4ab038a6e&quot;]]}" >
+<div class="avatar">
+<a title="赵劼"
+data-tip="p$t$jeffz"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/jeffz">
+<img src="http://pic1.zhimg.com/da8e974dc_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$jeffz" href="http://www.zhihu.com/people/jeffz" target="_blank" class="zg-link" title="赵劼">赵劼</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433501988000">3 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/26145477">监狱执行注射死刑之前给犯人手臂酒精消毒有意义吗？</a></h2>
+<div class="entry-body "
+data-aid="8313020"
+data-atoken="32317862"
+data-collapsed="False"
+data-created="1414035818"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="1195">1195</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">1195</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$ran-lee-38" href="/people/ran-lee-38">李燃末</a>，<strong title="弃坑大师；胡说霸道，头头是道。" class="zu-question-my-bio">弃坑大师；胡说霸道，头头是道。</strong>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="1195">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$jason-den" href="http://www.zhihu.com/people/jason-den" class="zg-link" title="Jason Den">Jason Den</a>、</span><span class="user-block"><a data-tip="p$t$yu-hui-28-53" href="http://www.zhihu.com/people/yu-hui-28-53" class="zg-link" title="夜曲984">夜曲984</a>、</span><span class="user-block"><a data-tip="p$t$wang-qi-73-34" href="http://www.zhihu.com/people/wang-qi-73-34" class="zg-link" title="王七">王七</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="2641062" data-action="/answer/content">
+
+<textarea class="content hidden">
+楼上所有的高票回答统统没有答在点子上，比如这是医学规范、对罪犯的尊重等等。&lt;br&gt;&lt;br&gt;真正的逻辑是这样的:&lt;br&gt;&lt;br&gt;执行死刑的机关或者人，只有一种权力被赋予，就是将药物注射进犯人体内。除此之外，他没有任何权力去用任何方式恐吓、暗示、明示犯人即将被处死。&lt;br&gt;简单讲，任何一个人都没有权力这样向罪犯传达信息:你要死了，哈哈，爽不爽？后悔吗？从罪犯的角度看，这种信息传达带来的附加伤害并不是他应该承担的。就像犯人无论怎样罪大恶极，都有法庭的宣判作为惩罚，任何不得殴打，辱骂，恐吓，或者通过暗示给予犯人伤害。&lt;br&gt;&lt;br&gt;因此，如果在执行前不进行消毒，犯人可以理解为这是一种暗示:我要死了，用不着消毒了。从而产生一种恐惧——这是他无需承担的部分，这也是执行人没有权力强加给犯人的。&lt;br&gt;&lt;br&gt;除了在规定的时间进行注射是执行人的职责和权力，执行人对待犯人没有任何其他权力。
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link meta-item" target="_blank" href="/question/26145477/answer/32317862">发布于 2014-10-23</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+楼上所有的高票回答统统没有答在点子上，比如这是医学规范、对罪犯的尊重等等。真正的逻辑是这样的:执行死刑的机关或者人，只有一种权力被赋予，就是将药物注射进犯人体内。除此之外，他没有任何权力去用任何方式恐吓、暗示、明示犯人即将被处死。简单讲，…
+
+<a href="/question/26145477/answer/32317862" class="toggle-expand">显示全部</a>
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-2641062"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>67 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+<div class="feed-item folding feed-item-hook feed-item-a
+
+"
+id="feed-a15464170_104_0"
+data-type="a"
+data-feedtype="ANSWER_VOTE_UP">
+
+
+
+<meta itemprop="question-id" content="4497294">
+<meta itemprop="question-url-token" content="30787344">
+
+
+<meta itemprop="answer-id" content="15464170">
+<meta itemprop="answer-url-token" content="50160445">
+
+<meta itemprop="ZReactor" data-id="15464170" data-meta="{&quot;source_type&quot;: &quot;member_voteup_answer&quot;, &quot;favourites&quot;: 5, &quot;voteups&quot;: 105, &quot;comments&quot;: 14, &quot;source&quot;: [[&quot;member&quot;, &quot;b79798309f84efce89e6f3136e179a7d&quot;]]}" >
+<div class="avatar">
+<a title="余小十"
+data-tip="p$t$xia-ying-35"
+class="zm-item-link-avatar"
+target="_blank"
+href="/people/xia-ying-35">
+<img src="http://pic1.zhimg.com/b906cc07b30e9daff02a0b8625f78344_m.jpg" class="zm-item-img-avatar">
+</a>
+</div>
+<div class="feed-main">
+<div class="source">
+
+<a data-tip="p$t$xia-ying-35" href="http://www.zhihu.com/people/xia-ying-35" target="_blank" class="zg-link" title="余小十">余小十</a> 
+赞同该回答
+
+
+<span class="time" data-timestamp="1433501637000">3 小时前</span>
+</div>
+<div class="content">
+<h2><a class="question_link" target="_blank" href="/question/30787344">你这辈子说过最霸气的一句话是什么？</a></h2>
+<div class="entry-body "
+data-aid="15464170"
+data-atoken="50160445"
+data-collapsed="False"
+data-created="1433474630"
+data-deleted="0"
+data-isowner="0"
+data-helpful="1"
+data-score="0"
+>
+
+<div class="zm-item-vote">
+<a name="expand" class="zm-item-vote-count" href="javascript:;" data-votecount="105">105</a>
+</div>
+<div class="zm-votebar">
+<button class="up ">
+<i class="icon vote-arrow"></i>
+<span class="label">赞同</span>
+<span class="count">105</span>
+</button>
+<button class="down ">
+<i class="icon vote-arrow"></i>
+<span class="label">反对</span>
+</button>
+</div>
+
+<div class="zm-item-answer-detail">
+
+<div class="zm-item-answer-author-info">
+<h3 class="zm-item-answer-author-wrap">
+
+
+<a data-tip="p$t$sang-sang-89-86" href="/people/sang-sang-89-86">sang sang</a>
+
+</h3>
+<a href="javascript:;" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+<div class="zm-item-vote-info " data-votecount="105">
+
+<span class="voters">
+<span class="user-block"><a data-tip="p$t$wang-ni-ma-79-49" href="http://www.zhihu.com/people/wang-ni-ma-79-49" class="zg-link" title="王尼玛">王尼玛</a>、</span><span class="user-block"><a data-tip="p$t$zhang-ya-181" href="http://www.zhihu.com/people/zhang-ya-181" class="zg-link" title="张长牙">张长牙</a>、</span><span class="user-block"><a data-tip="p$t$zuo-xue-yan" href="http://www.zhihu.com/people/zuo-xue-yan" class="zg-link" title="左雪烟">左雪烟</a></span>
+</span>
+
+
+<a href="javascript:;" class="more"> 等人赞同</a>
+
+
+</div>
+<div class="zm-item-rich-text" data-resourceid="4497294" data-action="/answer/content">
+
+<textarea class="content hidden">
+是以前大学室友的一句话。&lt;br&gt;晚上睡前我担心明天会下雨，室友说：&lt;br&gt;“他敢。”&lt;br&gt;&lt;br&gt;&lt;br&gt;第二天老天爷果然没下雨....
+
+
+<span class="answer-date-link-wrap">
+<a class="answer-date-link last_updated meta-item" data-tip="s$t$发布于 11:23" target="_blank" href="/question/30787344/answer/50160445">编辑于 16:40</a>
+</span>
+
+</textarea>
+<div class="zh-summary summary clearfix">
+
+是以前大学室友的一句话。晚上睡前我担心明天会下雨，室友说：“他敢。”第二天老天爷果然没下雨....
+
+</div>
+
+</div>
+</div>
+</div>
+<div class="feed-meta">
+<div class="zm-item-meta zm-item-comment-el answer-actions clearfix">
+<div class="zm-meta-panel">
+
+<a data-follow="q:link" class="follow-link zg-follow meta-item" href="javascript:;" id="sfb-4497294"><i class="z-icon-follow"></i>关注问题</a>
+
+<a href="#" name="addcomment" class=" meta-item toggle-comment">
+<i class="z-icon-comment"></i>14 条评论</a>
+
+
+<a href="#" class="meta-item zu-autohide" name="thanks" data-thanked="false"><i class="z-icon-thank"></i>感谢</a>
+
+
+
+<a href="#" class="meta-item zu-autohide" name="share">
+<i class="z-icon-share"></i>分享</a>
+<a href="#" class="meta-item zu-autohide" name="favo">
+<i class="z-icon-collect"></i>收藏</a>
+
+
+
+
+<span class="zg-bull zu-autohide">&bull;</span>
+
+<a href="#" name="nohelp" class="meta-item zu-autohide">没有帮助</a>
+
+<span class="zg-bull zu-autohide">&bull;</span>
+<a href="#" name="report" class="meta-item zu-autohide">举报</a>
+
+
+
+
+<span class="copyright zu-autohide"></span>
+
+
+<a href="#" name="collapse" class="collapse meta-item zg-right"><i class="z-icon-fold"></i>收起</a>
+</div>
+
+</div>
+
+<a style="cursor: pointer" class="ignore zu-autohide" name="ignore" data-tip="s$b$不再显示"></a>
+
+</div>
+</div>
+</div>
+<div class="feed-hide-options hidden">
+<a href="javascript:;" class="close-button js-close" data-tip="s$b$关闭">
+<i class="icon icon-close-16x16"></i><span class="hide-text">关闭</span>
+</a>
+
+</div>
+</div>
+
+
+</div>
+<a href="javascript:;" id="zh-load-more" data-method="next" class="zg-btn-white zg-r3px zu-button-more" style="display:none">更多</a>
+</div>
+</div>
+</div>
+<div class="zu-main-sidebar">
+<div class="shameimaru-placeholder" data-class="HomeUpShameimaruV2" data-params='{}'></div>
+<div class="zm-side-section">
+<div class="zm-side-section-inner">
+<div class="zm-side-nav-group">
+<ul class="zm-side-nav" id="zg-sidebar-nav">
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/draft">
+<i class="zg-icon zg-icon-sidenav-draft"></i>
+我的草稿
+<span class="zg-num">3</span>
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/collections">
+<i class="zg-icon zg-icon-sidenav-fav"></i>
+我的收藏
+<span class="zg-num">31</span>
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/question/following">
+<i class="zg-icon zg-icon-sidenav-follow"></i>
+我关注的问题
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/question/invited">
+<i class="zg-icon zg-icon-sidenav-invite"></i>
+邀请我回答的问题
+
+</a>
+</li>
+</ul>
+</div>
+<div class="zm-side-nav-group">
+<ul class="zm-side-nav">
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/log/questions">
+<i class="zg-icon zg-icon-sidenav-all"></i>
+所有问题
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link" href="/topics">
+<i class="zg-icon zg-icon-sidenav-plaza"></i>
+话题广场
+</a>
+</li>
+<li class="zm-side-nav-li rq3-publiceditlink" id="js-debuts-entry">
+<a class="zm-side-nav-link" href="/debuts/">
+<i class="zg-icon zg-icon-sidenav-debuts"></i>
+首场秀
+</a>
+
+</li>
+<li class="zm-side-nav-li rq3-publiceditlink" id="rq3-sidenav-link">
+<a class="zm-side-nav-link" href="/watch">
+<i class="zg-icon zg-icon-sidenav-publicedit"></i>
+公共编辑动态
+<span class="zg-num hidden">0</span>
+</a>
+</li>
+<li class="zm-side-nav-li">
+<a class="zm-side-nav-link z-ico-container" href="/community">
+<i class="z-ico-community"></i>
+社区服务中心
+</a>
+</li>
+</ul>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+<div class="zm-side-section zm-side-list-content zm-side-pinned-topics">
+<h3><a href="/roundtable" class="zg-link-litblue zg-right">查看全部 &raquo;</a>知乎圆桌</h3>
+<ul class="zm-side-nav">
+
+<li class="zm-side-nav-li zm-side-nav-roundtable">
+<a class="photo zm-side-nav-link" href="/roundtable/kids-safety">
+<img data-tip="r$b$kids-safety" src="http://pic2.zhimg.com/888fd39c733d29ca759f494fe051b6e1_s.jpg" class="side-topic-avatar" alt="宝贝小心">
+<span data-tip="r$b$kids-safety">
+宝贝小心
+</span>
+
+</a>
+
+</li>
+
+<li class="zm-side-nav-li zm-side-nav-roundtable">
+<a class="photo zm-side-nav-link" href="/roundtable/taxation">
+<img data-tip="r$b$taxation" src="http://pic4.zhimg.com/ea6cbb02a9a684ced92b6dc724ad6ce3_s.jpg" class="side-topic-avatar" alt="问税大厅">
+<span data-tip="r$b$taxation">
+问税大厅
+</span>
+
+</a>
+
+</li>
+
+<li class="zm-side-nav-li zm-side-nav-roundtable">
+<a class="photo zm-side-nav-link" href="/roundtable/underpressure">
+<img data-tip="r$b$underpressure" src="http://pic3.zhimg.com/5a61e640cbf25483cea8f170f11f766e_s.jpg" class="side-topic-avatar" alt="你有压力">
+<span data-tip="r$b$underpressure">
+你有压力
+</span>
+
+</a>
+
+</li>
+
+</ul>
+</div>
+<div class="zm-side-section zm-side-list-content zm-side-pinned-topics">
+<h3><a href="/topic" class="zg-link-litblue zg-right">查看全部 &raquo;</a>常去话题</h3>
+<ul class="zm-side-nav">
+
+<li class="zm-side-nav-li">
+<a class="photo zm-side-nav-link" href="/topic/19550453">
+<img src="http://pic4.zhimg.com/123baadab17b76ff7a416a74390df9bb_s.jpg" alt="音乐" class="js-topic-avatar side-topic-avatar">
+音乐
+</a>
+<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="75" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+</li>
+
+<li class="zm-side-nav-li">
+<a class="photo zm-side-nav-link" href="/topic/19551557">
+<img src="http://pic1.zhimg.com/e8b840284350f4a2d01ea6869926bfcc_s.jpg" alt="设计" class="js-topic-avatar side-topic-avatar">
+设计
+</a>
+<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="445" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+</li>
+
+<li class="zm-side-nav-li">
+<a class="photo zm-side-nav-link" href="/topic/19551991">
+<img src="http://pic1.zhimg.com/66a9d4423822b6ac0260c08f7627d990_s.jpg" alt="iOS 应用" class="js-topic-avatar side-topic-avatar">
+iOS 应用
+</a>
+<a id="ga_sidebar_topic_all" href="javascript:;" class="unpin" data-tid="595" data-action="unpin-topic"><i class="z-icon-x"></i></a>
+</li>
+
+</ul>
+</div>
+<div class="zm-side-section zm-side-list-content hidden">
+<h3 class="zu-trending-title"><a href="/lookup/people" class="zg-link-litblue zg-right">更多推荐 &raquo;</a>你可能感兴趣的人</h3>
+<div id="zh-trendings" class="zh-trendings"></div>
+</div>
+
+<div class="shameimaru-placeholder" data-class="HomeBottomShameimaruV2" data-params='{}'></div>
+<div id="zh-footer" class="zh-footer">
+<div class="zg-wrap clearfix">
+<ul>
+
+<li><a href="/question/19581624" target='_blank'>知乎指南</a></li>
+<li><a href="javascript:;" id="js-feedback-button">建议反馈</a></li>
+
+<li><a href="/app" target='_blank'>移动应用</a></li>
+<li><a href="/careers">加入知乎</a></li>
+<li><a href="/terms" target="_blank">知乎协议</a></li>
+<li><a href="mailto:bd@zhihu.com">商务合作</a></li>
+</ul>
+<span class="copy">&copy; 2015 知乎</span>
+</div>
+</div>
+
+<div class="zg-clear"></div>
+</div>
+<div class="zg-clear"></div>
+</div>
+
+
+
+
+
+<script type="text/json" class="json-inline" data-name="current_user">["\u622e\u9ed8","chen-hao-12-95","http:\/\/pic1.zhimg.com\/035a5f058_s.jpg","5e90fc80225ab18817884eb979c431a6","\u7a0b\u5e8f\u733f",0,0,1,"chenhao5866@gmail.com","http:\/\/mail.google.com",0,false,false,52234494672896]</script>
+<script type="text/json" class="json-inline" data-name="env">["zhihu.com","comet.zhihu.com",false,null]</script>
+<script type="text/json" class="json-inline" data-name="permissions">[]</script>
+
+
+<script type="text/json" class="json-inline" data-name="ga_vars">{"user_created":1400771290000,"now":1433513259000,"abtest_mask":"---------0--------------------","user_attr":[1,0,0,"-",1],"user_hash":"5e90fc80225ab18817884eb979c431a6"}</script>
+
+<script src="http://static.zhihu.com/static/ver/82cfd3bf774281811fa8287dc189988f.extern_src.min.js"></script>
+<script src="http://static.zhihu.com/static/ver/6946dfd3efef139951fd5b42bab795e1.app_core.js"></script>
+<script src="http://static.zhihu.com/static/ver/af4f108349f9bac0e682be0960bcfefc.sign.js"></script>
+<script src="http://static.zhihu.com/static/ver/0b50ab7295b08fff6515df01c1d0d3fd.app.js"></script>
+<script src="http://static.zhihu.com/static/ver/9aaf67efdef587881a2eb4c93d998897.rich_text_editor.js"></script>
+
+<script type="text/zscript" znonce="7b7098ce719b4edba10ce52945066129">
+ZH.entryHome();
+</script>
+
+<input type="hidden" name="_xsrf" value="38652b740b6f32d592a1f742f628a861"/>
+</body>
+</html>
