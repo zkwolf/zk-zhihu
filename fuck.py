@@ -6,7 +6,7 @@ import requests
 import gzip
 
 s = requests.session()
-login_data = {'email': 'chenhao5866@gmail.com', 'password': 'hacker97976442'}
+login_data = {'email': 'chenhao5866@gmail.com', 'password': '***********'}
 s.post('http://www.zhihu.com/login', login_data)
 
 r = s.get('http://www.zhihu.com')
