@@ -10,8 +10,8 @@ import re
 
 bitch = []
 s = requests.session()
-login_data = {'email': 'chenhao5866@gmail.com', 'password': '************'}
-s.post('http://www.zhihu.com/login', login_data)
+login_data = {'email': 'chenhao5866@gmail.com', 'password': '*****'}
+s.post('http://www.zhihu.com/login/', login_data)
 
 
 def get_followees():
