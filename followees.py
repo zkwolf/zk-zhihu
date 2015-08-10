@@ -65,31 +65,32 @@ def get_followees(url):
     '''
         获取所有除第一页以外的所有关注
     '''
-    offsets = []
-    divi = num // 20
-    header = {
-        'Host': 'www.zhihu.com',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36',
-        'Referer': 'http://www.zhihu.com',
-        'X-Requested-With': 'XMLHttpRequest',
-    }
-    for i in range(divi):
-        offsets.append(20 * (i + 1))
-    offsets.append(num)
-    for index in range(divi + 1):
-        offset = offsets[index]
-        print(offset)
-        params = json.dumps(
-            {"offset": offset, "order_by": "created", "hash_id": hash_id})
-        payload = {'method': 'next', 'params': params, '_xsrf': _xsrf}
-        request_url = "http://www.zhihu.com/node/ProfileFolloweesListV2"
-        x = s.post(request_url, data=payload, headers=header)
-        temp = json.loads(x.text)
-        _followee2 = temp.get('msg')
-        followee2 = ''.join(_followee2)
-        soup = BeautifulSoup(followee2, 'html.parser')
-        for followee in soup.select('h2.zm-list-content-title a'):
-            data_temp.add(followee.attrs.get('href'))
+    if num > 20:
+        offsets = []
+        divi = num // 20
+        header = {
+            'Host': 'www.zhihu.com',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36',
+            'Referer': 'http://www.zhihu.com',
+            'X-Requested-With': 'XMLHttpRequest',
+        }
+        for i in range(divi):
+            offsets.append(20 * (i + 1))
+        offsets.append(num)
+        for index in range(divi + 1):
+            offset = offsets[index]
+            print(offset)
+            params = json.dumps(
+                {"offset": offset, "order_by": "created", "hash_id": hash_id})
+            payload = {'method': 'next', 'params': params, '_xsrf': _xsrf}
+            request_url = "http://www.zhihu.com/node/ProfileFolloweesListV2"
+            x = s.post(request_url, data=payload, headers=header)
+            temp = json.loads(x.text)
+            _followee2 = temp.get('msg')
+            followee2 = ''.join(_followee2)
+            soup = BeautifulSoup(followee2, 'html.parser')
+            for followee in soup.select('h2.zm-list-content-title a'):
+                data_temp.add(followee.attrs.get('href'))
         time.sleep(0.5)
 
 
