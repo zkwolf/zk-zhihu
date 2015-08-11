@@ -53,10 +53,6 @@ def get_followees(url):
     s.cookies.update(cookie)
     r = s.get(url)
     data = r.text
-    raw_hash_id = re.findall('hash_id(.*)', data)
-    hash_id = raw_hash_id[0][14:46]
-    raw_xsrf = re.findall('xsrf(.*)', data)
-    _xsrf = raw_xsrf[0][9:-3]
     soup = BeautifulSoup(data, 'html.parser')
     people = soup.select("div.zu-main-sidebar strong")
     num = int(people[0].get_text())
@@ -66,6 +62,10 @@ def get_followees(url):
         获取所有除第一页以外的所有关注
     '''
     if num > 20:
+        raw_hash_id = re.findall('hash_id(.*)', data)
+        hash_id = raw_hash_id[0][14:46]
+        raw_xsrf = re.findall('xsrf(.*)', data)
+        _xsrf = raw_xsrf[0][9:-3]
         offsets = []
         divi = num // 20
         header = {
@@ -118,7 +118,11 @@ def loop(depth):
 
 if __name__ == "__main__":
     depth = int(input('请输入深度\n'))
-    loop(depth)
-    with open('followees.txt', 'w') as f:
-        for i in data_sum:
-            f.write(i + '\n')
+    try:
+        loop(depth)
+    except KeyboardInterrupt:
+        print('KeyboardInterrupt')
+    finally:
+        with open('followees.txt', 'w') as f:
+            for i in data_sum:
+                f.write(i + '\n')
