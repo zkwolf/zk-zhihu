@@ -76,7 +76,8 @@ def get_followees(url):
         }
         for i in range(divi):
             offsets.append(20 * (i + 1))
-        offsets.append(num)
+        if num % 20 != 0:
+            offsets.append(num)
         for index in range(divi + 1):
             offset = offsets[index]
             print(offset)
