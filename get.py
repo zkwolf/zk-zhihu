@@ -4,7 +4,6 @@ import sqlite3
 import win32crypt
 import os
 import json
-from bs4 import BeautifulSoup
 import logging
 import time
 import re
@@ -14,12 +13,15 @@ logging.basicConfig(level=logging.INFO)
 url_queue = []
 w_url = []
 
+
 def get_chrome_cookies():
     '''
         这里请先用chrome登陆知乎以获取coookie
     '''
     url = '.zhihu.com'
-    cmd = 'copy \"' + os.getenv('LOCALAPPDATA') + '\\Google\\Chrome\\User Data\\Default\\Cookies' + '\" D:\\python-chrome-cookies'
+    cmd = 'copy \"' + \
+        os.getenv('LOCALAPPDATA') + '\\Google\\Chrome\\User Data\\Default\\Cookies' + \
+        '\" D:\\python-chrome-cookies'
     os.system(cmd)
     conn = sqlite3.connect("d:\\python-chrome-cookies")
     ret_list = []
@@ -35,6 +37,7 @@ def get_chrome_cookies():
     with open('cookies', 'w') as f:
         f.write(str(ret_dict))
 
+
 def get_queue():
     if os.path.exists('followees.txt'):
         logging.info('file exists')
@@ -42,11 +45,20 @@ def get_queue():
             for line in f.readlines():
                 url_queue.append(line.strip('\n'))
 
+
+def judge(args):
+    if args:
+        args = args[0]
+    else:
+        args = None
+    return args
+
+
 def get_content():
     header = {
-            'Host': 'www.zhihu.com',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36',
-            'Referer': 'http://www.zhihu.com/people/zkwolf10824/followees',
+        'Host': 'www.zhihu.com',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.125 Safari/537.36',
+        'Referer': 'http://www.zhihu.com',
     }
     if not os.path.exists('cookies'):
         get_chrome_cookies()
@@ -54,18 +66,37 @@ def get_content():
         cookie = eval(f.read())
     s = requests.Session()
     s.cookies.update(cookie)
+    i = 0
     for url in url_queue:
-        r = s.get(url, headers=header)
-        soup = BeautifulSoup(r.text, 'html.parser')
-        sex_i = soup.select('span.gender.item i')
         try:
-           sex = re.search(r'class="icon icon-profile-(.*)"', str(sex_i)).group(1)
-           if sex == 'female':
-               w_url.append(url)
-               print(url)
-        except:
-            print('error: %s' % (url))
-        time.sleep(2)
+            conn = s.get(url, headers=header, timeout=2)
+        except Exception as err:
+            print(err)
+        data = conn.text
+        i += 1
+        name = re.findall('<span class="name">(.*?)</span>', data)[1]
+        location = judge(
+            re.findall('<span class="location item" title="(.*?)">', data))
+        business = judge(
+            re.findall('<span class="business item" title="(.*?)">', data))
+        employment = judge(
+            re.findall('<span class="employment item" title="(.*?)">', data))
+        position = judge(
+            re.findall('<span class="position item" title="(.*?)">', data))
+        education = judge(
+            re.findall('<span class="education item" title="(.*?)">', data))
+        education_extra = judge(
+            re.findall('''<span class="education-extra item" title='(.*?)'>''', data))
+        sex = judge(re.findall(
+            '<span class="item gender" ><i class="icon icon-profile-(.*?)"></i></span>', data))
+        question, answer = re.findall(
+            '<span class="num">(.*?)</span>', data)[:2]
+        agree, thanks = re.findall('<strong>(.*?)</strong>', data)[:2]
+        followees, followers = re.findall(
+            '<strong>(.*?)</strong>', data)[-5:-3]
+        print(i, url, name, location, business, employment, position, education,
+              education_extra, sex, question, answer, agree, thanks, followees, followers)
+
 
 if __name__ == "__main__":
     get_queue()
