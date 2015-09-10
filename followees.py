@@ -21,7 +21,7 @@ class find_zhihu():
         self.data_temp = set()
         self.data_next = set()
 
-    def get_chrome_cookies():
+    def get_chrome_cookies(self):
         '''
             这里请先用chrome登陆知乎以获取coookie
         '''
@@ -81,8 +81,7 @@ class find_zhihu():
                 offsets.append(20 * (i + 1))
             if num % 20 != 0:
                 offsets.append(num)
-            for index in range(divi + 1):
-                offset = offsets[index]
+            for index, offset in enumerate(offsets):
                 print(offset)
                 params = json.dumps(
                     {"offset": offset, "order_by": "created", "hash_id": hash_id})
