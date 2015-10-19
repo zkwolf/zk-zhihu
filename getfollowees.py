@@ -1,5 +1,4 @@
 import sqlite3
-import win32crypt
 import os
 import requests
 import re
@@ -14,45 +13,70 @@ zhihu_login_url = zhihu_url + "/login/email"
 captcha_url = zhihu_url + "/captcha.gif?r=" + str(int(time.time()))
 
 
-class find_zhihu():
+class GetFollowees:
+
 
     def __init__(self):
         self.data_sum = set()
         self.data_temp = set()
         self.data_next = set()
+        self.session = requests.Session()
 
-    def get_chrome_cookies(self):
-        '''
-            这里请先用chrome登陆知乎以获取coookie
-        '''
-        url = '.zhihu.com'
-        cmd = 'copy \"' + \
-            os.getenv('LOCALAPPDATA') + '\\Google\\Chrome\\User Data\\Default\\Cookies' + \
-            '\" D:\\python-chrome-cookies'
-        os.system(cmd)
-        conn = sqlite3.connect("d:\\python-chrome-cookies")
-        ret_list = []
-        ret_dict = {}
-        for row in conn.execute("select host_key, name, path, value, encrypted_value from cookies"):
-            if row[0] != url:
-                continue
-            ret = win32crypt.CryptUnprotectData(row[4], None, None, None, 0)
-            ret_list.append((row[1], ret[1]))
-            ret_dict[row[1]] = ret[1].decode()
-        conn.close()
-        os.system('del "D:\\python-chrome-cookies"')
-        with open('cookies', 'w') as f:
-            f.write(str(ret_dict))
+    def get_captcha(self):
+        self.session.get(zhihu_url)
+        data = {'email':'', 'password':'', 'remember_me': 'true'}
+        self.session.post(zhihu_login_url, data)
+        r = self.session.get(captcha_url)
+        return r.content
+
+    def login(self, email, password, captcha):
+
+        data = {'email': email, 'password': password, 'captcha': captcha, 'remember_me': 'true'}
+        r = self.session.post(zhihu_login_url, data=data)
+        j = r.json()
+        code = int(j['r'])
+        message = j['msg']
+        cookie_str = json.dumps(self.session.cookies.get_dict()) if code == 0 else ''
+        return code, message, cookie_str
+
+    def login_cmd(self):
+        print('=========zhihu login========')
+
+        email = input('email:')
+        password = input('password:')
+        captcha_data = self.get_captcha()
+        with open('captcha.gif', 'wb') as f:
+            f.write(captcha_data)
+        print('please check captcha.gif for captcha')
+        captcha = input('captcha:')
+        os.remove('captcha.gif')
+
+        print('-----loging.....-------')
+
+        code, msg, cookie = self.login(email, password, captcha)
+        if code == 0:
+            print('login successfully')
+        else:
+            print('login failed, reason: {0}'.format(msg))
+        return cookie
+        
+    def get_cookie(self):
+        cookie_str = self.login_cmd()
+        if cookie_str:
+            with open('cookies.json', 'w') as f:
+                f.write(cookie_str)
+            print('cookies file created.')
+        else:
+            print('coookies can\'t created.')
 
     def get_followees(self, url):
         '''
             获取关注界面，得到关注人数，确定offset的值
         '''
-        if not os.path.exists('cookies'):
-            self.get_chrome_cookies()
-        with open('cookies', 'r') as f:
+        with open('cookies.json', 'r') as f:
             cookie = eval(f.read())
-        s = requests.Session()
+        s = requests.session()
+        s.keep_alive = False
         s.cookies.update(cookie)
         r = s.get(url)
         data = r.text
@@ -94,8 +118,7 @@ class find_zhihu():
                 soup = BeautifulSoup(followee2, 'html.parser')
                 for followee in soup.select('h2.zm-list-content-title a'):
                     self.data_temp.add(followee.attrs.get('href'))
-            time.sleep(0.5)
-
+                    
     def loop(self, depth):
         for i in range(depth):
             if i == 0:
@@ -113,8 +136,10 @@ class find_zhihu():
             self.data_temp.clear()
 
 if __name__ == "__main__":
+    zhihu = GetFollowees()
+    if not os.path.exists('cookies.json'):
+        zhihu.get_cookie()
     depth = int(input('请输入深度\n'))
-    zhihu = find_zhihu()
     try:
         zhihu.loop(depth)
     except KeyboardInterrupt:
