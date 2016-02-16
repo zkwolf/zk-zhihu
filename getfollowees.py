@@ -1,4 +1,3 @@
-import sqlite3
 import os
 import requests
 import re
@@ -13,24 +12,23 @@ zhihu_login_url = zhihu_url + "/login/email"
 captcha_url = zhihu_url + "/captcha.gif?r=" + str(int(time.time()))
 
 
-class GetFollowees:
-
+class GetFollowees():
 
     def __init__(self):
         self.data_sum = set()
         self.data_temp = set()
         self.data_next = set()
         self.session = requests.Session()
+        self.session.keep_alive = False
 
     def get_captcha(self):
         self.session.get(zhihu_url)
-        data = {'email':'', 'password':'', 'remember_me': 'true'}
+        data = {'email': '', 'password': '', 'remember_me': 'true'}
         self.session.post(zhihu_login_url, data)
         r = self.session.get(captcha_url)
         return r.content
 
     def login(self, email, password, captcha):
-
         data = {'email': email, 'password': password, 'captcha': captcha, 'remember_me': 'true'}
         r = self.session.post(zhihu_login_url, data=data)
         j = r.json()
@@ -41,7 +39,6 @@ class GetFollowees:
 
     def login_cmd(self):
         print('=========zhihu login========')
-
         email = input('email:')
         password = input('password:')
         captcha_data = self.get_captcha()
@@ -50,16 +47,14 @@ class GetFollowees:
         print('please check captcha.gif for captcha')
         captcha = input('captcha:')
         os.remove('captcha.gif')
-
         print('-----loging.....-------')
-
         code, msg, cookie = self.login(email, password, captcha)
         if code == 0:
             print('login successfully')
         else:
             print('login failed, reason: {0}'.format(msg))
         return cookie
-        
+
     def get_cookie(self):
         cookie_str = self.login_cmd()
         if cookie_str:
@@ -71,16 +66,15 @@ class GetFollowees:
 
     def get_followees(self, url):
         '''
-            获取关注界面，得到关注人数，确定offset的值
+        获取关注界面，得到关注人数，确定offset的值
         '''
         with open('cookies.json', 'r') as f:
             cookie = eval(f.read())
-        s = requests.session()
-        s.keep_alive = False
+        s = self.session
         s.cookies.update(cookie)
         r = s.get(url)
         data = r.text
-        soup = BeautifulSoup(data, 'html.parser')
+        soup = BeautifulSoup(data, 'lxml')
         people = soup.select("div.zu-main-sidebar strong")
         num = int(people[0].get_text())
         for followee in soup.select('h2.zm-list-content-title a'):
@@ -115,10 +109,10 @@ class GetFollowees:
                 temp = json.loads(x.text)
                 _followee2 = temp.get('msg')
                 followee2 = ''.join(_followee2)
-                soup = BeautifulSoup(followee2, 'html.parser')
+                soup = BeautifulSoup(followee2, 'lxml')
                 for followee in soup.select('h2.zm-list-content-title a'):
                     self.data_temp.add(followee.attrs.get('href'))
-                    
+
     def loop(self, depth):
         for i in range(depth):
             if i == 0:
@@ -131,6 +125,7 @@ class GetFollowees:
                     print(url)
                     self.get_followees(url + '/followees')
                     time.sleep(2)
+            time.sleep(10)
             self.data_sum, self.data_temp = self.data_sum.union(self.data_temp), self.data_temp.difference(self.data_sum)
             self.data_next = copy.deepcopy(self.data_temp)
             self.data_temp.clear()
