@@ -19,7 +19,7 @@ class GetInfo():
 
     def judge(self, args):
         '''
-        judge the args if agrs is null, if it is null return None else return x.get_text()
+        judge the args if agrs is null, if null return None else return x.get_text()
         '''
         if args:
             args = args.get_text()
@@ -38,16 +38,14 @@ class GetInfo():
             cookie = eval(f.read())
         s = self.requests
         s.cookies.update(cookie)
-        i = 0
+        index = 0
         for url in self.url_queue:
-            try:
-                conn = s.get(url, headers=header, timeout=5)
-            except Exception as err:
-                print(err)
+            conn = s.get(url, headers=header, timeout=5)
             data = conn.text
-            i += 1
+            index += 1
             soup = BeautifulSoup(data, 'lxml')
             profile = soup.find('div', class_='zm-profile-header')
+            sidebar = soup.find('div', class_='zu-main-sidebar')
             name = self.judge(profile.find('span', class_='name'))
             location = self.judge(profile.find('span', class_='location item'))
             business = self.judge(profile.find('span', class_='business item'))
@@ -55,14 +53,15 @@ class GetInfo():
             position = self.judge(profile.find('span', class_='position item'))
             education = self.judge(profile.find('span', class_='education item'))
             education_extra = self.judge(profile.find('span', class_='education-extra item'))
-            # sex = self.judge(re.findall(
-            #     '<span class="item gender" ><i class="icon icon-profile-(.*?)"></i></span>', data))
-            # question, answer = re.findall(profile.
-            #     '<span class="num">(.*?)</span>', data)[:2]
-            # agree, thanks = re.findall('<strong>(.*?)</strong>', data)[:2]
-            # followees, followers = re.findall(
-            #     '<strong>(.*?)</strong>', data)[-5:-3]
-            print(i, url, name, location, business, employment, position, education, education_extra)
+            _sex = profile.find('span', class_='item gender')
+            if _sex:
+                sex = _sex.find('i')['class'][1][13:]
+            else:
+                sex = None
+            question, answer, post, *x = profile.find('div', class_='profile-navbar clearfix').find_all('span', class_='num')
+            agree, thanks = profile.find('div', class_='zm-profile-header-info-list').find_all('strong')
+            followees, followers = sidebar.find('div', class_='zm-profile-side-following zg-clear').find_all('strong')
+            print(index, url, name, sex, location, business, employment, position, education, education_extra, followees.get_text(), followers.get_text(), question.get_text(), answer.get_text(), post.get_text(), agree.get_text(), thanks.get_text())
 
 
 if __name__ == "__main__":
